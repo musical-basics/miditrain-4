@@ -524,13 +524,25 @@ class MacroMeterEstimator:
 
         if write_json:
             import os
-            # e.g., visualizer/public/etme_chunk1_dissonance_hybrid.json -> chunk1
+            import re
+            # Extract base_key intelligently from etme_*.json filename
+            # Examples:
+            #   etme_chunk1_dissonance_hybrid.json → chunk1
+            #   etme_pathetique_full_chunk_dissonance_hybrid_split_0.5.json → pathetique_full_chunk
             basename = os.path.basename(self.json_path)
-            if basename.startswith('etme_'):
-                base_key = basename.split('_')[1] # the part after 'etme_'
+            if basename.startswith('etme_') and basename.endswith('.json'):
+                # Remove 'etme_' prefix and '.json' suffix
+                middle = basename[5:-5]
+                # Split on known angle_maps and break_methods
+                for angle_map in ['dissonance', 'fifths']:
+                    if angle_map in middle:
+                        base_key = middle.split(f'_{angle_map}')[0]
+                        break
+                else:
+                    base_key = middle
             else:
                 base_key = basename.split('.')[0]
-                
+
             out_dir = os.path.dirname(self.json_path)
             out_path = os.path.join(out_dir, f"phase3_grid_{base_key}.json")
             

@@ -97,6 +97,7 @@ export default function ETMEVisualizer() {
   ]);
   const [phase3bData, setPhase3bData] = useState(null);
   const [phase3cData, setPhase3cData] = useState(null);
+  const [thermoData, setThermoData] = useState(null);
 
   const fileInputRef = useRef(null);
   const effectiveScaleRef = useRef(0.05);
@@ -172,10 +173,17 @@ export default function ETMEVisualizer() {
     }
 
     const baseKey = getBaseKey();
-    setEngineLogs(prev => [...prev, '\n[2/4] Running Phase 3A (phase3_meter.py)...']);
     const jsonTarget = (breakModel === 'hybrid' || breakModel === 'hybrid_split')
       ? `visualizer/public/etme_${baseKey}_${angleMap}_${breakModel}_${jaccardThreshold}.json`
       : `visualizer/public/etme_${baseKey}_${angleMap}_${breakModel}.json`;
+
+    setEngineLogs(prev => [...prev, '\n[2/5] Running Step 2.5 (thermodynamic_meter.py)...']);
+    const s1b = await runScript('thermodynamic_meter.py', [jsonTarget, '--json']);
+    if (!s1b) {
+      setEngineLogs(prev => [...prev, '\n⚠️ Step 2.5 failed (non-fatal). Continuing pipeline...']);
+    }
+
+    setEngineLogs(prev => [...prev, '\n[3/5] Running Phase 3A (phase3_meter.py)...']);
     const s2 = await runScript('phase3_meter.py', [jsonTarget, '--json']);
     if (!s2) {
       setEngineLogs(prev => [...prev, '\n❌ Pipeline aborted. Please check the logs above.']);
@@ -183,7 +191,7 @@ export default function ETMEVisualizer() {
       return;
     }
 
-    setEngineLogs(prev => [...prev, '\n[3/4] Running Phase 3B (phase3b_quantize.py)...']);
+    setEngineLogs(prev => [...prev, '\n[4/5] Running Phase 3B (phase3b_quantize.py)...']);
     const gridTarget = `visualizer/public/phase3_grid_${baseKey}.json`;
     const s3 = await runScript('phase3b_quantize.py', [jsonTarget, gridTarget]);
     if (!s3) {
@@ -192,7 +200,7 @@ export default function ETMEVisualizer() {
       return;
     }
 
-    setEngineLogs(prev => [...prev, '\n[4/4] Running Phase 3C (phase3c_notation.py)...']);
+    setEngineLogs(prev => [...prev, '\n[5/5] Running Phase 3C (phase3c_notation.py)...']);
     const p3cTarget = (breakModel === 'hybrid' || breakModel === 'hybrid_split')
       ? `visualizer/public/phase3b_quantized_${baseKey}_${angleMap}_${breakModel}_${jaccardThreshold}.json`
       : `visualizer/public/phase3b_quantized_${baseKey}_${angleMap}_${breakModel}.json`;
@@ -266,6 +274,13 @@ export default function ETMEVisualizer() {
       .then(r => { if (!r.ok) return null; return r.json(); })
       .then(setPhase3cData)
       .catch(() => setPhase3cData(null));
+
+    // Step 2.5: Thermodynamic Meter data
+    const thermoFile = `thermo_meter_${baseKey}.json`;
+    fetch(`/${thermoFile}?t=${Date.now()}_${refreshTrigger}`)
+      .then(r => { if (!r.ok) return null; return r.json(); })
+      .then(setThermoData)
+      .catch(() => setThermoData(null));
 
   }, [midiFile, angleMap, breakModel, jaccardThreshold, refreshTrigger, getBaseKey]);
 
@@ -503,6 +518,11 @@ export default function ETMEVisualizer() {
           fillColor = `hsla(${h}, ${s}%, ${l}%, 0.8)`;
           strokeColor = `hsla(${h}, ${s}%, ${Math.min(l + 10, 80)}%, 0.9)`;
         }
+      } else if (currentView === 'phase2_5') {
+        // Voice-colored notes with reduced alpha so thermodynamic overlay dominates
+        const vc = VOICE_COLORS[n.voice_tag] || VOICE_COLORS['Overflow (Chord)'];
+        fillColor = hsl(vc.h, vc.s, vc.l, 0.4);
+        strokeColor = hsl(vc.h, vc.s, Math.min(vc.l + 25, 80), 0.5);
       } else if (currentView === 'phase2' || currentView === 'phase3a' || currentView === 'phase3b') {
         const vc = VOICE_COLORS[n.voice_tag] || VOICE_COLORS['Overflow (Chord)'];
         // Reduce alpha slightly for 3B just to differentiate
@@ -706,7 +726,200 @@ export default function ETMEVisualizer() {
       }
     }
 
-    }, [data, gridData, currentView, msPxInput, noteHeight]);
+    // ══════════════════════════════════════════════════════════════════
+    // Step 2.5: Thermodynamic Overlay
+    // ══════════════════════════════════════════════════════════════════
+    if (currentView === 'phase2_5' && thermoData) {
+      const gridSample = thermoData.grid_sample || [];
+      const freezeEvents = thermoData.freezing_events || [];
+      const phaseCensus = thermoData.phase_census || {};
+      const thermoMeta = thermoData.thermodynamic_meta || {};
+
+      // ── Three-lane strip at bottom of piano roll ──────────────────
+      // T (temperature), η (viscosity), P (pressure) as stacked waveforms
+      const LANE_H = 32;
+      const LANE_GAP = 2;
+      const TOTAL_STRIP_H = LANE_H * 3 + LANE_GAP * 2 + 16; // +16 for labels
+      const stripTop = rollH - TOTAL_STRIP_H;
+
+      // Faint background for the strip area
+      ctx.fillStyle = 'rgba(0, 0, 0, 0.6)';
+      ctx.fillRect(0, stripTop, canvasW, TOTAL_STRIP_H);
+
+      // Find max values for normalization
+      let maxT = 0, maxEta = 0, maxP = 0;
+      for (const g of gridSample) {
+        if (g.T > maxT) maxT = g.T;
+        if (g.eta > maxEta) maxEta = g.eta;
+        if (g.P > maxP) maxP = g.P;
+      }
+      maxT = maxT || 1; maxEta = maxEta || 1; maxP = maxP || 1;
+
+      const lanes = [
+        { key: 'T',   label: 'T (Temperature)',  max: maxT,   color: 'rgba(255, 80, 40',   top: stripTop },
+        { key: 'eta', label: 'η (Viscosity)',     max: maxEta, color: 'rgba(40, 160, 255',  top: stripTop + LANE_H + LANE_GAP },
+        { key: 'P',   label: 'P (Pressure)',      max: maxP,   color: 'rgba(200, 80, 255',  top: stripTop + (LANE_H + LANE_GAP) * 2 },
+      ];
+
+      for (const lane of lanes) {
+        const laneTop = lane.top;
+
+        // Lane background
+        ctx.fillStyle = lane.color + ', 0.04)';
+        ctx.fillRect(0, laneTop, canvasW, LANE_H);
+
+        // Lane label
+        ctx.font = '8px Inter';
+        ctx.fillStyle = lane.color + ', 0.7)';
+        ctx.fillText(lane.label, 4, laneTop + 9);
+
+        // Draw waveform as filled area
+        if (gridSample.length > 1) {
+          ctx.beginPath();
+          ctx.moveTo(gridSample[0].t_ms * effectiveScale, laneTop + LANE_H);
+          for (const g of gridSample) {
+            const x = g.t_ms * effectiveScale;
+            const val = lane.key === 'eta' ? g.eta : (lane.key === 'P' ? g.P : g.T);
+            const h = (val / lane.max) * (LANE_H - 2);
+            ctx.lineTo(x, laneTop + LANE_H - h);
+          }
+          // Close the path back along the bottom
+          ctx.lineTo(gridSample[gridSample.length - 1].t_ms * effectiveScale, laneTop + LANE_H);
+          ctx.closePath();
+          ctx.fillStyle = lane.color + ', 0.15)';
+          ctx.fill();
+
+          // Stroke the top edge
+          ctx.beginPath();
+          let first = true;
+          for (const g of gridSample) {
+            const x = g.t_ms * effectiveScale;
+            const val = lane.key === 'eta' ? g.eta : (lane.key === 'P' ? g.P : g.T);
+            const h = (val / lane.max) * (LANE_H - 2);
+            const y = laneTop + LANE_H - h;
+            if (first) { ctx.moveTo(x, y); first = false; }
+            else ctx.lineTo(x, y);
+          }
+          ctx.strokeStyle = lane.color + ', 0.6)';
+          ctx.lineWidth = 1;
+          ctx.stroke();
+        }
+      }
+
+      // ── Phase color bands across the full piano roll ──────────────
+      const PHASE_COLORS = {
+        frozen_solid: 'rgba(40, 160, 255, 0.06)',
+        crystal:      'rgba(100, 200, 255, 0.04)',
+        liquid:       'rgba(80, 255, 120, 0.02)',
+        gas:          'rgba(255, 80, 40, 0.04)',
+      };
+
+      // Draw phase bands as vertical slices
+      for (let i = 0; i < gridSample.length - 1; i++) {
+        const g = gridSample[i];
+        const gNext = gridSample[i + 1];
+        const x = g.t_ms * effectiveScale;
+        const w = Math.max((gNext.t_ms - g.t_ms) * effectiveScale, 1);
+        const col = PHASE_COLORS[g.phase] || 'transparent';
+        if (col !== 'transparent') {
+          ctx.fillStyle = col;
+          ctx.fillRect(x, 0, w, stripTop);
+        }
+      }
+
+      // ── Freezing Event markers (vertical lines + diamonds) ────────
+      // Sort by magnitude for tertile classification
+      const sortedMags = [...freezeEvents].sort((a, b) => a.magnitude - b.magnitude);
+      const tercile1 = sortedMags.length > 2 ? sortedMags[Math.floor(sortedMags.length / 3)].magnitude : 0;
+      const tercile2 = sortedMags.length > 2 ? sortedMags[Math.floor(sortedMags.length * 2 / 3)].magnitude : Infinity;
+
+      for (const ev of freezeEvents) {
+        const x = ev.time_ms * effectiveScale;
+
+        // Strength determines visual weight
+        const isStrong = ev.magnitude >= tercile2;
+        const isMedium = ev.magnitude >= tercile1 && ev.magnitude < tercile2;
+
+        const alpha = isStrong ? 0.7 : (isMedium ? 0.45 : 0.25);
+        const lineWidth = isStrong ? 2 : (isMedium ? 1.5 : 1);
+        const color = ev.phase_to === 'frozen_solid'
+          ? `rgba(40, 180, 255, ${alpha})`     // Blue for frozen solid
+          : `rgba(100, 220, 255, ${alpha})`;    // Cyan for crystal
+
+        // Vertical line spanning the full roll
+        ctx.strokeStyle = color;
+        ctx.lineWidth = lineWidth;
+        ctx.setLineDash(isStrong ? [] : [4, 3]);
+        ctx.beginPath();
+        ctx.moveTo(x, 0);
+        ctx.lineTo(x, rollH);
+        ctx.stroke();
+        ctx.setLineDash([]);
+
+        // Diamond marker at top
+        const dSize = isStrong ? 6 : (isMedium ? 4 : 3);
+        ctx.fillStyle = color;
+        ctx.beginPath();
+        ctx.moveTo(x, 6 - dSize);
+        ctx.lineTo(x + dSize, 6);
+        ctx.lineTo(x, 6 + dSize);
+        ctx.lineTo(x - dSize, 6);
+        ctx.closePath();
+        ctx.fill();
+
+        // Duration bar at top (shows how long the solid phase lasts)
+        const durW = Math.max(ev.duration_ms * effectiveScale, 2);
+        ctx.fillStyle = color.replace(/[\d.]+\)$/, '0.15)');
+        ctx.fillRect(x, 0, durW, 3);
+
+        // Magnitude label
+        if (isStrong || isMedium) {
+          ctx.font = '7px Inter';
+          ctx.fillStyle = color;
+          ctx.textAlign = 'center';
+          const magLabel = ev.magnitude >= 1000
+            ? `${(ev.magnitude / 1000).toFixed(1)}k`
+            : ev.magnitude.toFixed(0);
+          ctx.fillText(magLabel, x, 20);
+
+          // Phase transition label
+          ctx.font = '6px Inter';
+          ctx.fillStyle = color.replace(/[\d.]+\)$/, '0.5)');
+          ctx.fillText(ev.phase_from === 'gas' ? 'gas→solid' : 'liq→solid', x, 27);
+          ctx.textAlign = 'start';
+        }
+      }
+
+      // ── Energy accumulator curve (in viscosity lane) ──────────────
+      if (gridSample.length > 1) {
+        let maxE = 0;
+        for (const g of gridSample) { if (g.E > maxE) maxE = g.E; }
+        if (maxE > 0) {
+          const eLaneTop = lanes[1].top; // overlay on viscosity lane
+          ctx.beginPath();
+          let first = true;
+          for (const g of gridSample) {
+            const x = g.t_ms * effectiveScale;
+            const h = (g.E / maxE) * (LANE_H - 2);
+            const y = eLaneTop + LANE_H - h;
+            if (first) { ctx.moveTo(x, y); first = false; }
+            else ctx.lineTo(x, y);
+          }
+          ctx.strokeStyle = 'rgba(255, 220, 40, 0.4)';
+          ctx.lineWidth = 1;
+          ctx.setLineDash([2, 2]);
+          ctx.stroke();
+          ctx.setLineDash([]);
+
+          // Label
+          ctx.font = '7px Inter';
+          ctx.fillStyle = 'rgba(255, 220, 40, 0.5)';
+          ctx.fillText('E(t)', canvasW - 30, eLaneTop + 9);
+        }
+      }
+    }
+
+    }, [data, gridData, thermoData, currentView, msPxInput, noteHeight]);
 
 
   useEffect(() => { render(); }, [render]);
@@ -812,6 +1025,67 @@ export default function ETMEVisualizer() {
         <div className="legend-item"><div className="legend-swatch" style={{ background: 'rgba(80,80,100,0.4)' }} />Silence / Void</div>
       </>
     );
+    if (currentView === 'phase2_5') return (
+      <>
+        <h3>Step 2.5 — Thermodynamic Meter</h3>
+        {thermoData ? (
+          <>
+            <div className="legend-item">
+              <div className="legend-swatch" style={{ background: 'rgba(40, 180, 255, 0.7)' }} />
+              Freeze (Frozen Solid)
+            </div>
+            <div className="legend-item">
+              <div className="legend-swatch" style={{ background: 'rgba(100, 220, 255, 0.6)' }} />
+              Freeze (Crystal)
+            </div>
+            <div style={{ marginTop: 8, borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: 8 }}>
+              <div className="legend-item">
+                <div className="legend-swatch" style={{ background: 'rgba(255, 80, 40, 0.6)' }} />
+                T — Temperature (disorder)
+              </div>
+              <div className="legend-item">
+                <div className="legend-swatch" style={{ background: 'rgba(40, 160, 255, 0.6)' }} />
+                &eta; — Viscosity (inertia)
+              </div>
+              <div className="legend-item">
+                <div className="legend-swatch" style={{ background: 'rgba(200, 80, 255, 0.6)' }} />
+                P — Pressure (urgency)
+              </div>
+              <div className="legend-item">
+                <div className="legend-swatch" style={{ background: 'transparent', border: '1px dashed rgba(255, 220, 40, 0.5)' }} />
+                E(t) — Energy accumulator
+              </div>
+            </div>
+            <div style={{ marginTop: 8, borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: 8 }}>
+              <div className="legend-item" style={{ fontSize: 10, color: 'rgba(255,255,255,0.6)' }}>
+                Phase Census:
+              </div>
+              {Object.entries(thermoData.phase_census || {}).map(([phase, pct]) => (
+                <div key={phase} className="legend-item" style={{ fontSize: 10 }}>
+                  <span style={{ color: phase === 'frozen_solid' ? '#28a0ff' : phase === 'crystal' ? '#64dcff' : phase === 'gas' ? '#ff5028' : '#50ff78' }}>
+                    {phase}: {pct}%
+                  </span>
+                </div>
+              ))}
+            </div>
+            {thermoData.meter && (
+              <div style={{ marginTop: 8, borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: 8 }}>
+                <div className="legend-item">
+                  <span style={{ color: '#ff6b35', fontWeight: 600 }}>{thermoData.meter.time_signature}</span>
+                  &nbsp;({thermoData.meter.meter_type})
+                </div>
+                <div className="legend-item">
+                  <span style={{ color: '#ff6b35', fontWeight: 600 }}>{thermoData.meter.bpm_tactus} BPM</span>
+                </div>
+                <div className="legend-item" style={{ color: 'rgba(255,255,255,0.5)', fontSize: 10 }}>
+                  {thermoData.freezing_events?.length} freezing events
+                </div>
+              </div>
+            )}
+          </>
+        ) : <div style={{ color: 'rgba(255,255,255,0.4)' }}>No thermo data. Run engine first.</div>}
+      </>
+    );
     if (currentView === 'phase3a') return (
       <>
         <h3>Phase 3A — Macro-Meter</h3>
@@ -879,7 +1153,8 @@ export default function ETMEVisualizer() {
   const views = [
     { id: 'raw', label: 'Piano Roll', color: 'var(--accent-blue)' },
     { id: 'phase1', label: 'Phase 1 — Harmonic Regimes', color: 'var(--accent-green)' },
-    { id: 'phase2', label: 'Phase 2 — Voice Threading', color: 'var(--accent-pink)' }
+    { id: 'phase2', label: 'Phase 2 — Voice Threading', color: 'var(--accent-pink)' },
+    { id: 'phase2_5', label: 'Step 2.5 — Thermodynamic', color: '#ff6b35' }
   ];
 
   const phase3Views = [
