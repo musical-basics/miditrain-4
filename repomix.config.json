@@ -1,0 +1,38 @@
+{
+  "output": {
+    "filePath": "repomix-output.xml",
+    "style": "xml"
+  },
+  "ignore": {
+    "useGitignore": true,
+    "useDefaultPatterns": true,
+    "customPatterns": [
+      ".venv/**",
+      "__pycache__/**",
+      "node_modules/**",
+      ".next/**",
+      ".git/**",
+      ".DS_Store",
+      "*.mid",
+      "*.png",
+      "*.pth",
+      "visualizer/public/etme_*.json",
+      "visualizer/public/phase3_grid_*.json",
+      "visualizer/public/phase3b_*.json",
+      "visualizer/public/phase3c_*.json",
+      "visualizer/public/test*.json",
+      "pnpm-lock.yaml",
+      "pnpm-workspace.yaml",
+      "wandb/**",
+      "repomix-output.*",
+      "CLAUDE.md",
+      "AGENTS.md",
+      "_backup_files/**",
+      "STS_bootstrapper.py",
+      "Screenshot*",
+      "DreamFlow_MIDI_Format_Guide/**",
+      "harmonic_regime_detector.md",
+      "*.log"
+    ]
+  }
+}
