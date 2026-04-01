@@ -77,6 +77,7 @@ export default function ETMEVisualizer() {
   const [angleMap, setAngleMap] = useState('dissonance');
   const [breakModel, setBreakModel] = useState('hybrid');
   const [jaccardThreshold, setJaccardThreshold] = useState(0.5);
+  const [minBreakMass, setMinBreakMass] = useState(0.75);
   const [hZoom, setHZoom] = useState(10);
   const [vZoom, setVZoom] = useState(10);
   const [tooltip, setTooltip] = useState(null);
@@ -115,7 +116,7 @@ export default function ETMEVisualizer() {
 
   const runEngine = useCallback(async () => {
     setIsEngineRunning(true);
-    setEngineLogs([`🚀 Starting ETME Engine Pipeline for ${midiFile} (${angleMap}, ${breakModel}, ${jaccardThreshold})...`]);
+    setEngineLogs([`🚀 Starting ETME Engine Pipeline for ${midiFile} (${angleMap}, ${breakModel}, ${jaccardThreshold}, mass=${minBreakMass})...`]);
 
     const runScript = async (script, args) => {
       const resp = await fetch('/api/run-python', {
@@ -164,7 +165,8 @@ export default function ETMEVisualizer() {
       '--midi_key', midiFile,
       '--angle_map', angleMap,
       '--break_method', breakModel,
-      '--jaccard', jaccardThreshold.toString()
+      '--jaccard', jaccardThreshold.toString(),
+      '--min_break_mass', minBreakMass.toString()
     ]);
     if (!s1) {
       setEngineLogs(prev => [...prev, '\n❌ Pipeline aborted. Please check the logs above.']);
@@ -173,7 +175,7 @@ export default function ETMEVisualizer() {
     }
 
     const baseKey = getBaseKey();
-    const jsonTarget = (breakModel === 'hybrid' || breakModel === 'hybrid_split')
+    const jsonTarget = (['hybrid', 'hybrid_split', 'jaccard_only', 'jaccard_only_split', 'hybrid_v2', 'hybrid_v2_split'].includes(breakModel))
       ? `visualizer/public/etme_${baseKey}_${angleMap}_${breakModel}_${jaccardThreshold}.json`
       : `visualizer/public/etme_${baseKey}_${angleMap}_${breakModel}.json`;
 
@@ -201,7 +203,7 @@ export default function ETMEVisualizer() {
     }
 
     setEngineLogs(prev => [...prev, '\n[5/5] Running Phase 3C (phase3c_notation.py)...']);
-    const p3cTarget = (breakModel === 'hybrid' || breakModel === 'hybrid_split')
+    const p3cTarget = (['hybrid', 'hybrid_split', 'jaccard_only', 'jaccard_only_split', 'hybrid_v2', 'hybrid_v2_split'].includes(breakModel))
       ? `visualizer/public/phase3b_quantized_${baseKey}_${angleMap}_${breakModel}_${jaccardThreshold}.json`
       : `visualizer/public/phase3b_quantized_${baseKey}_${angleMap}_${breakModel}.json`;
     const s4 = await runScript('phase3c_notation.py', [p3cTarget, gridTarget, '--algo', keyAlgorithm]);
@@ -214,7 +216,7 @@ export default function ETMEVisualizer() {
     setEngineLogs(prev => [...prev, '\n✅ Pipeline Complete! You can now dismiss this window.']);
     setRefreshTrigger(prev => prev + 1);
     setIsEngineDone(true);
-  }, [midiFile, angleMap, breakModel, jaccardThreshold, getBaseKey]);
+  }, [midiFile, angleMap, breakModel, jaccardThreshold, minBreakMass, getBaseKey]);
 
   const handleFileUpload = async (e) => {
     const file = e.target.files[0];
@@ -248,7 +250,7 @@ export default function ETMEVisualizer() {
   // Load data when any selector changes
   useEffect(() => {
     const baseKey = getBaseKey();
-    const etmeFile = (breakModel === 'hybrid' || breakModel === 'hybrid_split')
+    const etmeFile = (['hybrid', 'hybrid_split', 'jaccard_only', 'jaccard_only_split', 'hybrid_v2', 'hybrid_v2_split'].includes(breakModel))
       ? `etme_${baseKey}_${angleMap}_${breakModel}_${jaccardThreshold}.json`
       : `etme_${baseKey}_${angleMap}_${breakModel}.json`;
       
@@ -257,7 +259,7 @@ export default function ETMEVisualizer() {
       .then(setData)
       .catch(() => setData(null));
 
-    const p3bFile = (breakModel === 'hybrid' || breakModel === 'hybrid_split')
+    const p3bFile = (['hybrid', 'hybrid_split', 'jaccard_only', 'jaccard_only_split', 'hybrid_v2', 'hybrid_v2_split'].includes(breakModel))
       ? `phase3b_quantized_${baseKey}_${angleMap}_${breakModel}_${jaccardThreshold}.json`
       : `phase3b_quantized_${baseKey}_${angleMap}_${breakModel}.json`;
 
@@ -266,7 +268,7 @@ export default function ETMEVisualizer() {
       .then(setPhase3bData)
       .catch(() => setPhase3bData(null));
 
-    const p3cFile = (breakModel === 'hybrid' || breakModel === 'hybrid_split')
+    const p3cFile = (['hybrid', 'hybrid_split', 'jaccard_only', 'jaccard_only_split', 'hybrid_v2', 'hybrid_v2_split'].includes(breakModel))
       ? `phase3c_osmd_ready_${baseKey}_${angleMap}_${breakModel}_${jaccardThreshold}.json`
       : `phase3c_osmd_ready_${baseKey}_${angleMap}_${breakModel}.json`;
 
@@ -388,8 +390,8 @@ export default function ETMEVisualizer() {
     }
 
     // Phase 1: Regime blocks — paint background using the TRUE average chord hue from notes
-    if (currentView === 'phase1' || currentView === 'phase3a') {
-      const regimeAlpha = currentView === 'phase3a' ? 0.45 : 1.0; // reduced opacity in phase3a so barlines dominate
+    if (currentView === 'phase1' || currentView === 'phase3a' || currentView === 'phase2_5') {
+      const regimeAlpha = currentView === 'phase3a' ? 0.45 : currentView === 'phase2_5' ? 0.35 : 1.0; // reduced opacity in phase3a/phase2_5 so overlays dominate
 
       for (const r of regimes) {
         const x = r.start_time * effectiveScale;
@@ -429,7 +431,7 @@ export default function ETMEVisualizer() {
         ctx.fillStyle = stateColor;
         ctx.fillRect(x, 0, w, 3);
 
-        // Label (only in phase1 full view — too cluttered in phase3a with barlines)
+        // Label (only in phase1 full view — too cluttered in phase3a/phase2_5 with overlays)
         if (w > 30 && currentView === 'phase1') {
           ctx.font = '9px Inter';
           ctx.fillStyle = stateColor;
@@ -1023,11 +1025,36 @@ export default function ETMEVisualizer() {
         <div className="legend-item"><div className="legend-swatch" style={{ background: 'hsla(120,80%,50%,0.75)' }} />🔒 Locked</div>
         <div className="legend-item"><div className="legend-swatch" style={{ background: 'hsla(60,95%,60%,0.9)', boxShadow: '0 0 6px hsla(60,90%,50%,0.5)' }} />⚡ Spike</div>
         <div className="legend-item"><div className="legend-swatch" style={{ background: 'rgba(80,80,100,0.4)' }} />Silence / Void</div>
+        <div style={{ marginTop: 12, borderTop: '1px solid rgba(255,255,255,0.1)', paddingTop: 10 }}>
+          <label style={{ fontSize: 10, color: 'rgba(255,255,255,0.6)', display: 'block', marginBottom: 4 }}>
+            Min Break Mass: <strong style={{ color: '#fff' }}>{minBreakMass}</strong>
+          </label>
+          <input
+            type="range" min="0.1" max="1.5" step="0.05"
+            value={minBreakMass}
+            onChange={e => setMinBreakMass(parseFloat(e.target.value))}
+            style={{ width: '100%', accentColor: 'var(--accent-green)' }}
+          />
+          <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: 9, color: 'rgba(255,255,255,0.35)' }}>
+            <span>0.1 (sensitive)</span>
+            <span>1.5 (conservative)</span>
+          </div>
+          <div style={{ fontSize: 9, color: 'rgba(255,255,255,0.4)', marginTop: 4 }}>
+            Re-run engine to apply
+          </div>
+        </div>
       </>
     );
     if (currentView === 'phase2_5') return (
       <>
-        <h3>Step 2.5 — Thermodynamic Meter</h3>
+        <h3>Phase 3 — Thermodynamics</h3>
+        <div style={{ marginBottom: 8, borderBottom: '1px solid rgba(255,255,255,0.1)', paddingBottom: 8 }}>
+          <div className="legend-item" style={{ fontSize: 10, color: 'rgba(255,255,255,0.5)', marginBottom: 4 }}>Harmonic Regimes (Phase 1):</div>
+          <div className="legend-item"><div className="legend-swatch" style={{ background: 'hsla(0,70%,45%,0.6)' }} />Stable (by hue)</div>
+          <div className="legend-item"><div className="legend-swatch" style={{ background: 'hsla(120,80%,50%,0.75)' }} />Locked</div>
+          <div className="legend-item"><div className="legend-swatch" style={{ background: 'hsla(60,95%,60%,0.9)', boxShadow: '0 0 6px hsla(60,90%,50%,0.5)' }} />Spike</div>
+          <div className="legend-item"><div className="legend-swatch" style={{ background: 'rgba(80,80,100,0.4)' }} />Silence / Void</div>
+        </div>
         {thermoData ? (
           <>
             <div className="legend-item">
@@ -1088,7 +1115,7 @@ export default function ETMEVisualizer() {
     );
     if (currentView === 'phase3a') return (
       <>
-        <h3>Phase 3A — Macro-Meter</h3>
+        <h3>Phase 4A — Macro-Meter</h3>
         {gridData ? (
           <>
             <div className="legend-item">
@@ -1154,13 +1181,13 @@ export default function ETMEVisualizer() {
     { id: 'raw', label: 'Piano Roll', color: 'var(--accent-blue)' },
     { id: 'phase1', label: 'Phase 1 — Harmonic Regimes', color: 'var(--accent-green)' },
     { id: 'phase2', label: 'Phase 2 — Voice Threading', color: 'var(--accent-pink)' },
-    { id: 'phase2_5', label: 'Step 2.5 — Thermodynamic', color: '#ff6b35' }
+    { id: 'phase2_5', label: 'Phase 3 — Thermodynamics', color: '#ff6b35' }
   ];
 
   const phase3Views = [
-    { id: 'phase3a', label: '3A — Macro-Meter', color: '#ffd640' },
-    { id: 'phase3b', label: '3B — Micro-Quantize', color: '#8e24aa' },
-    { id: 'phase3c', label: '3C — Notation Map', color: '#4caf50' }
+    { id: 'phase3a', label: '4A — Macro-Meter', color: '#ffd640' },
+    { id: 'phase3b', label: '4B — Micro-Quantize', color: '#8e24aa' },
+    { id: 'phase3c', label: '4C — Notation Map', color: '#4caf50' }
   ];
 
   return (
@@ -1209,7 +1236,7 @@ export default function ETMEVisualizer() {
             paddingRight: '24px'
           }}
         >
-          <option value="phase3_placeholder" disabled>PHASE 3 OPTIONS...</option>
+          <option value="phase3_placeholder" disabled>PHASE 4 OPTIONS...</option>
           {phase3Views.map(v => (
             <option key={v.id} value={v.id} style={{ background: '#1a1a2e', color: '#e0e0e0' }}>
               {v.label}
@@ -1329,8 +1356,12 @@ export default function ETMEVisualizer() {
           <option value="histogram">Histogram (Cosine)</option>
           <option value="hybrid">Hybrid (Angle+Jaccard)</option>
           <option value="hybrid_split">Hybrid-Split (Queue Split)</option>
+          <option value="hybrid_v2">Hybrid-V2 (Scaled Mass)</option>
+          <option value="hybrid_v2_split">Hybrid-V2 (Queue Split)</option>
+          <option value="jaccard_only">Jaccard-Only</option>
+          <option value="jaccard_only_split">Jaccard-Only (Queue Split)</option>
         </select>
-        {(breakModel === 'hybrid' || breakModel === 'hybrid_split') && (
+        {(['hybrid', 'hybrid_split', 'jaccard_only', 'jaccard_only_split', 'hybrid_v2', 'hybrid_v2_split'].includes(breakModel)) && (
           <select
             value={jaccardThreshold}
             onChange={e => setJaccardThreshold(+e.target.value)}

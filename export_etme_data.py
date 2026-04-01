@@ -180,9 +180,9 @@ def extract_keyframes(midi_path, group_window_ms=50):
     return keyframes
 
 
-def export_analysis(midi_path, output_json="etme_analysis.json", angle_map='dissonance', break_method='centroid', jaccard_threshold=0.5):
+def export_analysis(midi_path, output_json="etme_analysis.json", angle_map='dissonance', break_method='centroid', jaccard_threshold=0.5, min_break_mass=0.75):
     print(f"Loading MIDI: {midi_path}")
-    print(f"  Angle map: {angle_map}, Break method: {break_method}, Jaccard: {jaccard_threshold}")
+    print(f"  Angle map: {angle_map}, Break method: {break_method}, Jaccard: {jaccard_threshold}, Min Break Mass: {min_break_mass}")
     particles = midi_to_particles(midi_path)
     keyframes = extract_keyframes(midi_path)
     print(f"  Loaded {len(particles)} particles, {len(keyframes)} keyframes")
@@ -194,7 +194,7 @@ def export_analysis(midi_path, output_json="etme_analysis.json", angle_map='diss
     # =============================================
     print(f"Running Phase 1: Harmonic Regime Detector (Limbo V2.2)...")
     detector = HarmonicRegimeDetector(
-        break_angle=15.0, min_break_mass=0.75, merge_angle=20.0,
+        break_angle=15.0, min_break_mass=min_break_mass, merge_angle=20.0,
         angle_map=angle_map, break_method=break_method, jaccard_threshold=jaccard_threshold
     )
 
@@ -363,6 +363,7 @@ if __name__ == "__main__":
     parser.add_argument('--angle_map', type=str, help='e.g. dissonance, fifths')
     parser.add_argument('--break_method', type=str, help='e.g. centroid, histogram, hybrid, hybrid_split')
     parser.add_argument('--jaccard', type=float, default=0.5, help='Jaccard threshold')
+    parser.add_argument('--min_break_mass', type=float, default=0.75, help='Minimum mass to trigger regime break')
     
     args = parser.parse_args()
 
@@ -384,12 +385,12 @@ if __name__ == "__main__":
                 sys.exit(1)
             
         out = f"visualizer/public/etme_{base_key}_{args.angle_map}_{args.break_method}"
-        if args.break_method in ('hybrid', 'hybrid_split'):
+        if args.break_method in ('hybrid', 'hybrid_split', 'jaccard_only', 'jaccard_only_split', 'hybrid_v2', 'hybrid_v2_split'):
             out += f"_{args.jaccard}.json"
-            export_analysis(midi_path, output_json=out, angle_map=args.angle_map, break_method=args.break_method, jaccard_threshold=args.jaccard)
+            export_analysis(midi_path, output_json=out, angle_map=args.angle_map, break_method=args.break_method, jaccard_threshold=args.jaccard, min_break_mass=args.min_break_mass)
         else:
             out += ".json"
-            export_analysis(midi_path, output_json=out, angle_map=args.angle_map, break_method=args.break_method)
+            export_analysis(midi_path, output_json=out, angle_map=args.angle_map, break_method=args.break_method, min_break_mass=args.min_break_mass)
     else:
         # Run all
         angle_maps = ['dissonance', 'fifths']

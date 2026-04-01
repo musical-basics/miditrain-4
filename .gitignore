@@ -35,3 +35,4 @@ _backup_files/
 
 # wandb
 wandb/
+.venv

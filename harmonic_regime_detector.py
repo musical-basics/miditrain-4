@@ -120,6 +120,29 @@ class HarmonicRegimeDetector:
 
     def _should_break(self, anchor_particles, combined_pending, diff, pmass, is_subset=False, jaccard=1.0):
         """Determine if a regime break should occur based on the chosen method."""
+
+        # Jaccard-only: pure set-overlap break detection — no mass gate, no angle rule.
+        # The centroid/angle map is used ONLY for coloring; Jaccard handles all break decisions.
+        # Probation/debounce is the safety net for single-note false positives.
+        if self.break_method in ('jaccard_only', 'jaccard_only_split'):
+            if is_subset:
+                return False
+            return jaccard < self.jaccard_threshold
+
+        # Hybrid-V2: Jaccard-primary with scaled mass gate.
+        # Strong harmonic evidence (low Jaccard) lowers the mass requirement.
+        # effective_threshold = max(0.3, min_break_mass × jaccard / jaccard_threshold)
+        #   Jaccard=0.0 → threshold=0.3  (two notes can break through)
+        #   Jaccard=0.25 → threshold=0.375
+        #   Jaccard≥threshold → no break (compatible harmony)
+        if self.break_method in ('hybrid_v2', 'hybrid_v2_split'):
+            if is_subset:
+                return False
+            if jaccard >= self.jaccard_threshold:
+                return False
+            effective_threshold = max(0.3, self.min_break_mass * (jaccard / self.jaccard_threshold))
+            return pmass > effective_threshold
+
         if pmass <= self.min_break_mass:
             return False
 
@@ -134,7 +157,7 @@ class HarmonicRegimeDetector:
             return cosine_sim < 0.7
 
         elif self.break_method in ('hybrid', 'hybrid_split'):
-            # 1. Subset Rule: if incoming notes are just a re-voicing/subset of the 
+            # 1. Subset Rule: if incoming notes are just a re-voicing/subset of the
             # established regime, suppress the break (even if angle diff is large due to volume).
             if is_subset:
                 return False
@@ -142,7 +165,7 @@ class HarmonicRegimeDetector:
             # 2. Angle Rule
             if diff > self.break_angle:
                 return True
-                
+
             # 3. Set Divergence Rule
             return jaccard < self.jaccard_threshold
 
@@ -289,7 +312,7 @@ class HarmonicRegimeDetector:
             is_subset_spike = False
             jaccard = 1.0
             
-            if self.break_method in ('hybrid', 'hybrid_split', 'histogram'):
+            if self.break_method in ('hybrid', 'hybrid_split', 'histogram', 'jaccard_only', 'jaccard_only_split', 'hybrid_v2', 'hybrid_v2_split'):
                 set_pending = self._get_dominant_pcs(combined_pending)
                 set_anchor = self._get_dominant_pcs(anchor_particles)
                 is_subset_anchor = bool(set_pending and set_pending.issubset(set_anchor))
@@ -330,7 +353,7 @@ class HarmonicRegimeDetector:
                 # check whether this new frame's pitch content diverges from
                 # the accumulated spike PCs. If so, force-confirm the existing
                 # spike as one regime and start a fresh spike with this frame.
-                if self.break_method == 'hybrid_split' and pending_spike_frames:
+                if self.break_method in ('hybrid_split', 'jaccard_only_split', 'hybrid_v2_split') and pending_spike_frames:
                     spike_pcs = set()
                     for _, ps_parts, _ in pending_spike_frames:
                         spike_pcs.update(self._get_dominant_pcs(ps_parts))

@@ -1,0 +1,7724 @@
+{
+  "source_file": "visualizer/public/etme_pathetique_full_chunk_dissonance_hybrid_split_0.3.json",
+  "thermodynamic_meta": {
+    "T_median": 38.9468,
+    "T_75": 60.4845,
+    "eta_median": 2.4892,
+    "eta_75": 4.2168
+  },
+  "phase_census": {
+    "frozen_solid": 13.4,
+    "crystal": 11.0,
+    "liquid": 57.5,
+    "gas": 18.0
+  },
+  "freezing_events": [
+    {
+      "time_ms": 7975,
+      "magnitude": 3646.537,
+      "eta_spike": 7.933,
+      "pressure_before": 48.048,
+      "energy_released": 9.371,
+      "tonic_bonus": 1.0,
+      "duration_ms": 525,
+      "phase_from": "liquid",
+      "phase_to": "crystal"
+    },
+    {
+      "time_ms": 8975,
+      "magnitude": 4465.235,
+      "eta_spike": 6.649,
+      "pressure_before": 15.352,
+      "energy_released": 41.07,
+      "tonic_bonus": 1.0,
+      "duration_ms": 775,
+      "phase_from": "gas",
+      "phase_to": "crystal"
+    },
+    {
+      "time_ms": 15100,
+      "magnitude": 75.537,
+      "eta_spike": 1.41,
+      "pressure_before": 6.721,
+      "energy_released": 6.939,
+      "tonic_bonus": 1.0,
+      "duration_ms": 775,
+      "phase_from": "gas",
+      "phase_to": "frozen_solid"
+    },
+    {
+      "time_ms": 23225,
+      "magnitude": 60390.207,
+      "eta_spike": 7.651,
+      "pressure_before": 39.624,
+      "energy_released": 194.286,
+      "tonic_bonus": 1.0,
+      "duration_ms": 1025,
+      "phase_from": "liquid",
+      "phase_to": "frozen_solid"
+    },
+    {
+      "time_ms": 25350,
+      "magnitude": 2715.814,
+      "eta_spike": 7.216,
+      "pressure_before": 4.613,
+      "energy_released": 67.058,
+      "tonic_bonus": 1.0,
+      "duration_ms": 3525,
+      "phase_from": "liquid",
+      "phase_to": "crystal"
+    },
+    {
+      "time_ms": 36475,
+      "magnitude": 0.591,
+      "eta_spike": 5.601,
+      "pressure_before": 0.0,
+      "energy_released": 0.106,
+      "tonic_bonus": 1.0,
+      "duration_ms": 1025,
+      "phase_from": "liquid",
+      "phase_to": "frozen_solid"
+    },
+    {
+      "time_ms": 38475,
+      "magnitude": 6093.578,
+      "eta_spike": 5.232,
+      "pressure_before": 9.601,
+      "energy_released": 109.865,
+      "tonic_bonus": 1.0,
+      "duration_ms": 1025,
+      "phase_from": "liquid",
+      "phase_to": "crystal"
+    },
+    {
+      "time_ms": 40475,
+      "magnitude": 7937.355,
+      "eta_spike": 5.012,
+      "pressure_before": 27.441,
+      "energy_released": 55.686,
+      "tonic_bonus": 1.0,
+      "duration_ms": 1025,
+      "phase_from": "gas",
+      "phase_to": "crystal"
+    },
+    {
+      "time_ms": 43475,
+      "magnitude": 35125.321,
+      "eta_spike": 4.938,
+      "pressure_before": 18.954,
+      "energy_released": 356.512,
+      "tonic_bonus": 1.0,
+      "duration_ms": 2025,
+      "phase_from": "gas",
+      "phase_to": "crystal"
+    },
+    {
+      "time_ms": 46475,
+      "magnitude": 6823.338,
+      "eta_spike": 4.53,
+      "pressure_before": 9.601,
+      "energy_released": 142.084,
+      "tonic_bonus": 1.0,
+      "duration_ms": 100,
+      "phase_from": "liquid",
+      "phase_to": "crystal"
+    },
+    {
+      "time_ms": 47225,
+      "magnitude": 12.049,
+      "eta_spike": 0.654,
+      "pressure_before": 3.381,
+      "energy_released": 4.206,
+      "tonic_bonus": 1.0,
+      "duration_ms": 275,
+      "phase_from": "liquid",
+      "phase_to": "frozen_solid"
+    },
+    {
+      "time_ms": 49725,
+      "magnitude": 312.85,
+      "eta_spike": 3.441,
+      "pressure_before": 27.231,
+      "energy_released": 3.22,
+      "tonic_bonus": 1.0,
+      "duration_ms": 525,
+      "phase_from": "gas",
+      "phase_to": "crystal"
+    },
+    {
+      "time_ms": 50475,
+      "magnitude": 9061.681,
+      "eta_spike": 4.385,
+      "pressure_before": 30.164,
+      "energy_released": 63.382,
+      "tonic_bonus": 1.046,
+      "duration_ms": 525,
+      "phase_from": "gas",
+      "phase_to": "crystal"
+    },
+    {
+      "time_ms": 51475,
+      "magnitude": 276.444,
+      "eta_spike": 7.713,
+      "pressure_before": 0.0,
+      "energy_released": 35.843,
+      "tonic_bonus": 1.0,
+      "duration_ms": 525,
+      "phase_from": "liquid",
+      "phase_to": "frozen_solid"
+    },
+    {
+      "time_ms": 59475,
+      "magnitude": 6274.986,
+      "eta_spike": 8.297,
+      "pressure_before": 48.048,
+      "energy_released": 15.42,
+      "tonic_bonus": 1.0,
+      "duration_ms": 525,
+      "phase_from": "liquid",
+      "phase_to": "crystal"
+    },
+    {
+      "time_ms": 60475,
+      "magnitude": 5980.973,
+      "eta_spike": 6.817,
+      "pressure_before": 13.37,
+      "energy_released": 61.051,
+      "tonic_bonus": 1.0,
+      "duration_ms": 775,
+      "phase_from": "liquid",
+      "phase_to": "crystal"
+    },
+    {
+      "time_ms": 62050,
+      "magnitude": 20.831,
+      "eta_spike": 0.354,
+      "pressure_before": 9.755,
+      "energy_released": 5.467,
+      "tonic_bonus": 1.0,
+      "duration_ms": 200,
+      "phase_from": "gas",
+      "phase_to": "crystal"
+    },
+    {
+      "time_ms": 70475,
+      "magnitude": 21255.217,
+      "eta_spike": 6.674,
+      "pressure_before": 14.644,
+      "energy_released": 203.581,
+      "tonic_bonus": 1.0,
+      "duration_ms": 400,
+      "phase_from": "gas",
+      "phase_to": "crystal"
+    },
+    {
+      "time_ms": 74600,
+      "magnitude": 413.628,
+      "eta_spike": 7.629,
+      "pressure_before": 6.4,
+      "energy_released": 7.327,
+      "tonic_bonus": 1.0,
+      "duration_ms": 775,
+      "phase_from": "liquid",
+      "phase_to": "crystal"
+    }
+  ],
+  "meter": {
+    "measure_ms": 3000,
+    "tactus_ms": 1000,
+    "bpm_tactus": 60,
+    "beats_per_measure": 3,
+    "denominator": 2,
+    "time_signature": "3/2",
+    "meter_type": "simple_triple",
+    "barlines": [
+      {
+        "measure": 1,
+        "time_ms": 0,
+        "snapped": false,
+        "drift_ms": 0,
+        "source": "dead_reckoning"
+      },
+      {
+        "measure": 2,
+        "time_ms": 3000,
+        "snapped": false,
+        "drift_ms": 0,
+        "source": "dead_reckoning"
+      },
+      {
+        "measure": 3,
+        "time_ms": 6000,
+        "snapped": false,
+        "drift_ms": 0,
+        "source": "dead_reckoning"
+      },
+      {
+        "measure": 4,
+        "time_ms": 8975,
+        "snapped": true,
+        "drift_ms": -25,
+        "source": "freeze_event",
+        "freeze_magnitude": 4465.235
+      },
+      {
+        "measure": 5,
+        "time_ms": 11975,
+        "snapped": false,
+        "drift_ms": 0,
+        "source": "dead_reckoning"
+      },
+      {
+        "measure": 6,
+        "time_ms": 15100,
+        "snapped": true,
+        "drift_ms": 125,
+        "source": "freeze_event",
+        "freeze_magnitude": 75.537
+      },
+      {
+        "measure": 7,
+        "time_ms": 18100,
+        "snapped": false,
+        "drift_ms": 0,
+        "source": "dead_reckoning"
+      },
+      {
+        "measure": 8,
+        "time_ms": 21100,
+        "snapped": false,
+        "drift_ms": 0,
+        "source": "dead_reckoning"
+      },
+      {
+        "measure": 9,
+        "time_ms": 24100,
+        "snapped": false,
+        "drift_ms": 0,
+        "source": "dead_reckoning"
+      },
+      {
+        "measure": 10,
+        "time_ms": 27100,
+        "snapped": false,
+        "drift_ms": 0,
+        "source": "dead_reckoning"
+      },
+      {
+        "measure": 11,
+        "time_ms": 30100,
+        "snapped": false,
+        "drift_ms": 0,
+        "source": "dead_reckoning"
+      },
+      {
+        "measure": 12,
+        "time_ms": 33100,
+        "snapped": false,
+        "drift_ms": 0,
+        "source": "dead_reckoning"
+      },
+      {
+        "measure": 13,
+        "time_ms": 36475,
+        "snapped": true,
+        "drift_ms": 375,
+        "source": "freeze_event",
+        "freeze_magnitude": 0.591
+      },
+      {
+        "measure": 14,
+        "time_ms": 39475,
+        "snapped": false,
+        "drift_ms": 0,
+        "source": "dead_reckoning"
+      },
+      {
+        "measure": 15,
+        "time_ms": 43350,
+        "snapped": false,
+        "drift_ms": 0,
+        "source": "gas_slide"
+      },
+      {
+        "measure": 16,
+        "time_ms": 46475,
+        "snapped": true,
+        "drift_ms": 125,
+        "source": "freeze_event",
+        "freeze_magnitude": 6823.338
+      },
+      {
+        "measure": 17,
+        "time_ms": 49725,
+        "snapped": true,
+        "drift_ms": 250,
+        "source": "freeze_event",
+        "freeze_magnitude": 312.85
+      },
+      {
+        "measure": 18,
+        "time_ms": 52725,
+        "snapped": false,
+        "drift_ms": 0,
+        "source": "dead_reckoning"
+      },
+      {
+        "measure": 19,
+        "time_ms": 55725,
+        "snapped": false,
+        "drift_ms": 0,
+        "source": "dead_reckoning"
+      },
+      {
+        "measure": 20,
+        "time_ms": 58725,
+        "snapped": false,
+        "drift_ms": 0,
+        "source": "dead_reckoning"
+      },
+      {
+        "measure": 21,
+        "time_ms": 62050,
+        "snapped": true,
+        "drift_ms": 325,
+        "source": "freeze_event",
+        "freeze_magnitude": 20.831
+      },
+      {
+        "measure": 22,
+        "time_ms": 65050,
+        "snapped": false,
+        "drift_ms": 0,
+        "source": "dead_reckoning"
+      },
+      {
+        "measure": 23,
+        "time_ms": 67475,
+        "snapped": false,
+        "drift_ms": 0,
+        "source": "gas_slide"
+      },
+      {
+        "measure": 24,
+        "time_ms": 70475,
+        "snapped": true,
+        "drift_ms": 0,
+        "source": "freeze_event",
+        "freeze_magnitude": 21255.217
+      },
+      {
+        "measure": 25,
+        "time_ms": 73475,
+        "snapped": false,
+        "drift_ms": 0,
+        "source": "dead_reckoning"
+      },
+      {
+        "measure": 26,
+        "time_ms": 76475,
+        "snapped": false,
+        "drift_ms": 0,
+        "source": "dead_reckoning"
+      }
+    ],
+    "pass2_repaired": false,
+    "autocorr": [
+      {
+        "lag_ms": 200,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 225,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 250,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 275,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 300,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 325,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 350,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 375,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 400,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 425,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 450,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 475,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 500,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 525,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 550,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 575,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 600,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 625,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 650,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 675,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 700,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 725,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 750,
+        "score": 0.0055
+      },
+      {
+        "lag_ms": 775,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 800,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 825,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 850,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 875,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 900,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 925,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 950,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 975,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 1000,
+        "score": 0.1057
+      },
+      {
+        "lag_ms": 1025,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 1050,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 1075,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 1100,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 1125,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 1150,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 1175,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 1200,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 1225,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 1250,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 1275,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 1300,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 1325,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 1350,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 1375,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 1400,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 1425,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 1450,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 1475,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 1500,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 1525,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 1550,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 1575,
+        "score": 0.0002
+      },
+      {
+        "lag_ms": 1600,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 1625,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 1650,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 1675,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 1700,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 1725,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 1750,
+        "score": 0.0002
+      },
+      {
+        "lag_ms": 1775,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 1800,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 1825,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 1850,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 1875,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 1900,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 1925,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 1950,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 1975,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 2000,
+        "score": 0.092
+      },
+      {
+        "lag_ms": 2025,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 2050,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 2075,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 2100,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 2125,
+        "score": 0.3126
+      },
+      {
+        "lag_ms": 2150,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 2175,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 2200,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 2225,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 2250,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 2275,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 2300,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 2325,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 2350,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 2375,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 2400,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 2425,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 2450,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 2475,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 2500,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 2525,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 2550,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 2575,
+        "score": 0.0003
+      },
+      {
+        "lag_ms": 2600,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 2625,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 2650,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 2675,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 2700,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 2725,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 2750,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 2775,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 2800,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 2825,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 2850,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 2875,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 2900,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 2925,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 2950,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 2975,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 3000,
+        "score": 1.0
+      },
+      {
+        "lag_ms": 3025,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 3050,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 3075,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 3100,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 3125,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 3150,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 3175,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 3200,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 3225,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 3250,
+        "score": 0.0043
+      },
+      {
+        "lag_ms": 3275,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 3300,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 3325,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 3350,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 3375,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 3400,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 3425,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 3450,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 3475,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 3500,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 3525,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 3550,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 3575,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 3600,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 3625,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 3650,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 3675,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 3700,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 3725,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 3750,
+        "score": 0.0008
+      },
+      {
+        "lag_ms": 3775,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 3800,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 3825,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 3850,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 3875,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 3900,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 3925,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 3950,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 3975,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 4000,
+        "score": 0.1209
+      },
+      {
+        "lag_ms": 4025,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 4050,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 4075,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 4100,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 4125,
+        "score": 0.0172
+      },
+      {
+        "lag_ms": 4150,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 4175,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 4200,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 4225,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 4250,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 4275,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 4300,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 4325,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 4350,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 4375,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 4400,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 4425,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 4450,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 4475,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 4500,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 4525,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 4550,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 4575,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 4600,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 4625,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 4650,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 4675,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 4700,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 4725,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 4750,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 4775,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 4800,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 4825,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 4850,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 4875,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 4900,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 4925,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 4950,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 4975,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 5000,
+        "score": 0.4283
+      },
+      {
+        "lag_ms": 5025,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 5050,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 5075,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 5100,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 5125,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 5150,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 5175,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 5200,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 5225,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 5250,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 5275,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 5300,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 5325,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 5350,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 5375,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 5400,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 5425,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 5450,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 5475,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 5500,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 5525,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 5550,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 5575,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 5600,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 5625,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 5650,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 5675,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 5700,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 5725,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 5750,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 5775,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 5800,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 5825,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 5850,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 5875,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 5900,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 5925,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 5950,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 5975,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 6000,
+        "score": 0.109
+      },
+      {
+        "lag_ms": 6025,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 6050,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 6075,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 6100,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 6125,
+        "score": 0.0007
+      },
+      {
+        "lag_ms": 6150,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 6175,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 6200,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 6225,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 6250,
+        "score": 0.0222
+      },
+      {
+        "lag_ms": 6275,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 6300,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 6325,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 6350,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 6375,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 6400,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 6425,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 6450,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 6475,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 6500,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 6525,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 6550,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 6575,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 6600,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 6625,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 6650,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 6675,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 6700,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 6725,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 6750,
+        "score": 0.0002
+      },
+      {
+        "lag_ms": 6775,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 6800,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 6825,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 6850,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 6875,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 6900,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 6925,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 6950,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 6975,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 7000,
+        "score": 0.6498
+      },
+      {
+        "lag_ms": 7025,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 7050,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 7075,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 7100,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 7125,
+        "score": 0.0006
+      },
+      {
+        "lag_ms": 7150,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 7175,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 7200,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 7225,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 7250,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 7275,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 7300,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 7325,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 7350,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 7375,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 7400,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 7425,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 7450,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 7475,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 7500,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 7525,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 7550,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 7575,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 7600,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 7625,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 7650,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 7675,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 7700,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 7725,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 7750,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 7775,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 7800,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 7825,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 7850,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 7875,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 7900,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 7925,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 7950,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 7975,
+        "score": 0.0
+      },
+      {
+        "lag_ms": 8000,
+        "score": 0.1099
+      }
+    ],
+    "autocorr_peak_ms": 3000
+  },
+  "grid_sample": [
+    {
+      "t_ms": 0,
+      "T": 0.0,
+      "eta": 4.3786,
+      "P": 0.0,
+      "phase": "frozen_solid",
+      "E": 0.0
+    },
+    {
+      "t_ms": 100,
+      "T": 0.0,
+      "eta": 4.5378,
+      "P": 0.0,
+      "phase": "frozen_solid",
+      "E": 0.0
+    },
+    {
+      "t_ms": 200,
+      "T": 0.0,
+      "eta": 4.3605,
+      "P": 0.0,
+      "phase": "frozen_solid",
+      "E": 0.0
+    },
+    {
+      "t_ms": 300,
+      "T": 10.0,
+      "eta": 4.3669,
+      "P": 1.7647,
+      "phase": "frozen_solid",
+      "E": 0.5176
+    },
+    {
+      "t_ms": 400,
+      "T": 18.3659,
+      "eta": 4.3603,
+      "P": 3.241,
+      "phase": "frozen_solid",
+      "E": 1.296
+    },
+    {
+      "t_ms": 500,
+      "T": 28.7744,
+      "eta": 1.2881,
+      "P": 8.6323,
+      "phase": "liquid",
+      "E": 3.2977
+    },
+    {
+      "t_ms": 600,
+      "T": 9.6096,
+      "eta": 1.3567,
+      "P": 3.8439,
+      "phase": "liquid",
+      "E": 7.122
+    },
+    {
+      "t_ms": 700,
+      "T": 23.2193,
+      "eta": 1.302,
+      "P": 6.9658,
+      "phase": "liquid",
+      "E": 9.3397
+    },
+    {
+      "t_ms": 800,
+      "T": 19.2193,
+      "eta": 1.3052,
+      "P": 5.7658,
+      "phase": "liquid",
+      "E": 11.0003
+    },
+    {
+      "t_ms": 900,
+      "T": 18.3659,
+      "eta": 1.302,
+      "P": 5.5098,
+      "phase": "liquid",
+      "E": 12.5404
+    },
+    {
+      "t_ms": 1000,
+      "T": 28.7744,
+      "eta": 3.8409,
+      "P": 5.3952,
+      "phase": "liquid",
+      "E": 0.7697
+    },
+    {
+      "t_ms": 1100,
+      "T": 9.6096,
+      "eta": 3.988,
+      "P": 2.4024,
+      "phase": "liquid",
+      "E": 4.0686
+    },
+    {
+      "t_ms": 1200,
+      "T": 19.2193,
+      "eta": 3.8228,
+      "P": 3.6036,
+      "phase": "liquid",
+      "E": 5.5018
+    },
+    {
+      "t_ms": 1300,
+      "T": 13.7095,
+      "eta": 3.8281,
+      "P": 2.5705,
+      "phase": "liquid",
+      "E": 6.4312
+    },
+    {
+      "t_ms": 1400,
+      "T": 13.7744,
+      "eta": 3.822,
+      "P": 2.5827,
+      "phase": "liquid",
+      "E": 7.2781
+    },
+    {
+      "t_ms": 1500,
+      "T": 7.2193,
+      "eta": 1.4828,
+      "P": 0.9024,
+      "phase": "liquid",
+      "E": 0.2051
+    },
+    {
+      "t_ms": 1600,
+      "T": 4.0564,
+      "eta": 2.1663,
+      "P": 0.7606,
+      "phase": "liquid",
+      "E": 1.3194
+    },
+    {
+      "t_ms": 1700,
+      "T": 12.1692,
+      "eta": 2.1663,
+      "P": 2.2817,
+      "phase": "liquid",
+      "E": 2.1409
+    },
+    {
+      "t_ms": 1800,
+      "T": 28.8289,
+      "eta": 2.3376,
+      "P": 4.5519,
+      "phase": "liquid",
+      "E": 4.0293
+    },
+    {
+      "t_ms": 1900,
+      "T": 40.0,
+      "eta": 2.3651,
+      "P": 6.3158,
+      "phase": "liquid",
+      "E": 5.6842
+    },
+    {
+      "t_ms": 2000,
+      "T": 42.1103,
+      "eta": 2.2753,
+      "P": 7.4312,
+      "phase": "liquid",
+      "E": 1.0233
+    },
+    {
+      "t_ms": 2100,
+      "T": 12.9248,
+      "eta": 2.4349,
+      "P": 3.0411,
+      "phase": "liquid",
+      "E": 5.0736
+    },
+    {
+      "t_ms": 2200,
+      "T": 46.4386,
+      "eta": 2.2519,
+      "P": 8.195,
+      "phase": "liquid",
+      "E": 8.2847
+    },
+    {
+      "t_ms": 2300,
+      "T": 50.4328,
+      "eta": 1.0391,
+      "P": 7.2047,
+      "phase": "liquid",
+      "E": 12.9247
+    },
+    {
+      "t_ms": 2400,
+      "T": 46.4386,
+      "eta": 1.054,
+      "P": 6.6341,
+      "phase": "liquid",
+      "E": 16.3915
+    },
+    {
+      "t_ms": 2500,
+      "T": 45.0,
+      "eta": 2.2201,
+      "P": 4.8214,
+      "phase": "liquid",
+      "E": 19.8009
+    },
+    {
+      "t_ms": 2600,
+      "T": 14.0368,
+      "eta": 2.3911,
+      "P": 2.0053,
+      "phase": "liquid",
+      "E": 20.4033
+    },
+    {
+      "t_ms": 2700,
+      "T": 46.4386,
+      "eta": 2.2088,
+      "P": 4.9756,
+      "phase": "liquid",
+      "E": 21.4196
+    },
+    {
+      "t_ms": 2800,
+      "T": 56.1471,
+      "eta": 0.4395,
+      "P": 9.3578,
+      "phase": "liquid",
+      "E": 27.6652
+    },
+    {
+      "t_ms": 2900,
+      "T": 46.4386,
+      "eta": 0.4676,
+      "P": 7.7398,
+      "phase": "liquid",
+      "E": 32.1643
+    },
+    {
+      "t_ms": 3000,
+      "T": 45.0,
+      "eta": 3.3385,
+      "P": 10.3846,
+      "phase": "liquid",
+      "E": 36.9428
+    },
+    {
+      "t_ms": 3100,
+      "T": 14.0368,
+      "eta": 3.457,
+      "P": 4.319,
+      "phase": "liquid",
+      "E": 40.1515
+    },
+    {
+      "t_ms": 3200,
+      "T": 23.2193,
+      "eta": 3.3407,
+      "P": 5.3583,
+      "phase": "liquid",
+      "E": 41.768
+    },
+    {
+      "t_ms": 3300,
+      "T": 23.2193,
+      "eta": 3.3387,
+      "P": 5.3583,
+      "phase": "liquid",
+      "E": 43.0885
+    },
+    {
+      "t_ms": 3400,
+      "T": 13.7744,
+      "eta": 3.3428,
+      "P": 3.1787,
+      "phase": "liquid",
+      "E": 44.1983
+    },
+    {
+      "t_ms": 3500,
+      "T": 15.2193,
+      "eta": 3.6815,
+      "P": 1.8263,
+      "phase": "liquid",
+      "E": 0.2395
+    },
+    {
+      "t_ms": 3600,
+      "T": 7.5,
+      "eta": 3.8008,
+      "P": 1.2,
+      "phase": "liquid",
+      "E": 1.4293
+    },
+    {
+      "t_ms": 3700,
+      "T": 22.5,
+      "eta": 3.6697,
+      "P": 2.7,
+      "phase": "liquid",
+      "E": 2.7617
+    },
+    {
+      "t_ms": 3800,
+      "T": 28.8289,
+      "eta": 3.0605,
+      "P": 3.3264,
+      "phase": "liquid",
+      "E": 1.6792
+    },
+    {
+      "t_ms": 3900,
+      "T": 30.0,
+      "eta": 2.9445,
+      "P": 3.4615,
+      "phase": "liquid",
+      "E": 3.2759
+    },
+    {
+      "t_ms": 4000,
+      "T": 29.2532,
+      "eta": 0.7144,
+      "P": 3.0262,
+      "phase": "liquid",
+      "E": 5.651
+    },
+    {
+      "t_ms": 4100,
+      "T": 9.5915,
+      "eta": 0.7525,
+      "P": 1.323,
+      "phase": "liquid",
+      "E": 8.711
+    },
+    {
+      "t_ms": 4200,
+      "T": 19.2193,
+      "eta": 0.7247,
+      "P": 1.9882,
+      "phase": "liquid",
+      "E": 10.3093
+    },
+    {
+      "t_ms": 4300,
+      "T": 19.2193,
+      "eta": 0.7254,
+      "P": 1.9882,
+      "phase": "liquid",
+      "E": 11.7742
+    },
+    {
+      "t_ms": 4400,
+      "T": 18.3659,
+      "eta": 0.7268,
+      "P": 1.8999,
+      "phase": "liquid",
+      "E": 13.2305
+    },
+    {
+      "t_ms": 4500,
+      "T": 28.8289,
+      "eta": 1.1411,
+      "P": 8.6487,
+      "phase": "liquid",
+      "E": 15.4081
+    },
+    {
+      "t_ms": 4600,
+      "T": 10.0,
+      "eta": 1.2121,
+      "P": 4.0,
+      "phase": "liquid",
+      "E": 19.2591
+    },
+    {
+      "t_ms": 4700,
+      "T": 20.0,
+      "eta": 0.8667,
+      "P": 6.0,
+      "phase": "liquid",
+      "E": 21.2315
+    },
+    {
+      "t_ms": 4800,
+      "T": 22.5,
+      "eta": 1.1561,
+      "P": 6.75,
+      "phase": "liquid",
+      "E": 22.9838
+    },
+    {
+      "t_ms": 4900,
+      "T": 45.0,
+      "eta": 1.5028,
+      "P": 13.8462,
+      "phase": "liquid",
+      "E": 26.4959
+    },
+    {
+      "t_ms": 5000,
+      "T": 55.0,
+      "eta": 3.8808,
+      "P": 10.3125,
+      "phase": "liquid",
+      "E": 0.4615
+    },
+    {
+      "t_ms": 5100,
+      "T": 12.6082,
+      "eta": 4.028,
+      "P": 3.1521,
+      "phase": "liquid",
+      "E": 1.837
+    },
+    {
+      "t_ms": 5200,
+      "T": 25.2164,
+      "eta": 3.865,
+      "P": 4.7281,
+      "phase": "liquid",
+      "E": 2.5767
+    },
+    {
+      "t_ms": 5300,
+      "T": 22.5163,
+      "eta": 3.8705,
+      "P": 4.2218,
+      "phase": "liquid",
+      "E": 3.167
+    },
+    {
+      "t_ms": 5400,
+      "T": 18.3659,
+      "eta": 3.8644,
+      "P": 3.4436,
+      "phase": "liquid",
+      "E": 3.6451
+    },
+    {
+      "t_ms": 5500,
+      "T": 33.7744,
+      "eta": 1.7994,
+      "P": 5.9602,
+      "phase": "liquid",
+      "E": 0.5604
+    },
+    {
+      "t_ms": 5600,
+      "T": 11.6096,
+      "eta": 1.8955,
+      "P": 2.7317,
+      "phase": "liquid",
+      "E": 3.1173
+    },
+    {
+      "t_ms": 5700,
+      "T": 23.2193,
+      "eta": 1.823,
+      "P": 4.0975,
+      "phase": "liquid",
+      "E": 4.988
+    },
+    {
+      "t_ms": 5800,
+      "T": 23.2193,
+      "eta": 1.826,
+      "P": 4.0975,
+      "phase": "liquid",
+      "E": 6.598
+    },
+    {
+      "t_ms": 5900,
+      "T": 18.3659,
+      "eta": 1.8246,
+      "P": 3.241,
+      "phase": "liquid",
+      "E": 8.0629
+    },
+    {
+      "t_ms": 6000,
+      "T": 33.7744,
+      "eta": 2.7131,
+      "P": 3.6187,
+      "phase": "liquid",
+      "E": 0.7264
+    },
+    {
+      "t_ms": 6100,
+      "T": 11.6096,
+      "eta": 2.817,
+      "P": 1.6585,
+      "phase": "liquid",
+      "E": 4.0124
+    },
+    {
+      "t_ms": 6200,
+      "T": 23.2193,
+      "eta": 2.7039,
+      "P": 2.4878,
+      "phase": "liquid",
+      "E": 6.1665
+    },
+    {
+      "t_ms": 6300,
+      "T": 19.2193,
+      "eta": 2.7099,
+      "P": 2.0592,
+      "phase": "liquid",
+      "E": 7.7264
+    },
+    {
+      "t_ms": 6400,
+      "T": 18.3659,
+      "eta": 2.7067,
+      "P": 1.9678,
+      "phase": "liquid",
+      "E": 9.1602
+    },
+    {
+      "t_ms": 6500,
+      "T": 33.7744,
+      "eta": 1.3905,
+      "P": 4.6056,
+      "phase": "liquid",
+      "E": 10.9273
+    },
+    {
+      "t_ms": 6600,
+      "T": 23.2193,
+      "eta": 1.6658,
+      "P": 5.2771,
+      "phase": "liquid",
+      "E": 14.2619
+    },
+    {
+      "t_ms": 6700,
+      "T": 45.0326,
+      "eta": 1.4501,
+      "P": 6.7549,
+      "phase": "liquid",
+      "E": 17.4192
+    },
+    {
+      "t_ms": 6800,
+      "T": 36.8474,
+      "eta": 1.4534,
+      "P": 6.1412,
+      "phase": "liquid",
+      "E": 19.3268
+    },
+    {
+      "t_ms": 6900,
+      "T": 43.7744,
+      "eta": 1.2838,
+      "P": 7.7249,
+      "phase": "liquid",
+      "E": 21.6137
+    },
+    {
+      "t_ms": 7000,
+      "T": 52.9288,
+      "eta": 1.4594,
+      "P": 7.8413,
+      "phase": "liquid",
+      "E": 24.9639
+    },
+    {
+      "t_ms": 7100,
+      "T": 13.75,
+      "eta": 1.9366,
+      "P": 2.5463,
+      "phase": "liquid",
+      "E": 28.664
+    },
+    {
+      "t_ms": 7200,
+      "T": 42.1103,
+      "eta": 1.8489,
+      "P": 6.2386,
+      "phase": "liquid",
+      "E": 30.9296
+    },
+    {
+      "t_ms": 7300,
+      "T": 42.1103,
+      "eta": 1.7694,
+      "P": 11.2294,
+      "phase": "liquid",
+      "E": 34.1439
+    },
+    {
+      "t_ms": 7400,
+      "T": 30.0,
+      "eta": 2.1931,
+      "P": 8.0,
+      "phase": "liquid",
+      "E": 36.2849
+    },
+    {
+      "t_ms": 7500,
+      "T": 50.4328,
+      "eta": 2.6987,
+      "P": 6.0519,
+      "phase": "liquid",
+      "E": 0.804
+    },
+    {
+      "t_ms": 7600,
+      "T": 25.2164,
+      "eta": 2.6629,
+      "P": 3.026,
+      "phase": "liquid",
+      "E": 3.5186
+    },
+    {
+      "t_ms": 7700,
+      "T": 22.5163,
+      "eta": 1.8319,
+      "P": 1.8013,
+      "phase": "liquid",
+      "E": 4.7095
+    },
+    {
+      "t_ms": 7800,
+      "T": 25.8496,
+      "eta": 1.7216,
+      "P": 1.6156,
+      "phase": "liquid",
+      "E": 6.1708
+    },
+    {
+      "t_ms": 7900,
+      "T": 45.0,
+      "eta": 1.7248,
+      "P": 2.4324,
+      "phase": "liquid",
+      "E": 8.2225
+    },
+    {
+      "t_ms": 8000,
+      "T": 62.5,
+      "eta": 6.3065,
+      "P": 8.6207,
+      "phase": "crystal",
+      "E": 0.324
+    },
+    {
+      "t_ms": 8100,
+      "T": 22.3593,
+      "eta": 6.7522,
+      "P": 4.6261,
+      "phase": "frozen_solid",
+      "E": 1.6774
+    },
+    {
+      "t_ms": 8200,
+      "T": 50.0,
+      "eta": 6.4826,
+      "P": 8.6207,
+      "phase": "crystal",
+      "E": 3.6401
+    },
+    {
+      "t_ms": 8300,
+      "T": 54.5096,
+      "eta": 6.7445,
+      "P": 9.3982,
+      "phase": "crystal",
+      "E": 4.7282
+    },
+    {
+      "t_ms": 8400,
+      "T": 67.5489,
+      "eta": 6.1948,
+      "P": 11.6464,
+      "phase": "crystal",
+      "E": 6.0042
+    },
+    {
+      "t_ms": 8500,
+      "T": 56.9288,
+      "eta": 2.6479,
+      "P": 10.3507,
+      "phase": "liquid",
+      "E": 10.1187
+    },
+    {
+      "t_ms": 8600,
+      "T": 27.5,
+      "eta": 2.9552,
+      "P": 7.5,
+      "phase": "liquid",
+      "E": 20.3726
+    },
+    {
+      "t_ms": 8700,
+      "T": 50.0,
+      "eta": 2.8374,
+      "P": 11.3636,
+      "phase": "liquid",
+      "E": 26.4515
+    },
+    {
+      "t_ms": 8800,
+      "T": 55.0,
+      "eta": 2.7514,
+      "P": 12.5,
+      "phase": "liquid",
+      "E": 31.4124
+    },
+    {
+      "t_ms": 8900,
+      "T": 67.5489,
+      "eta": 2.6774,
+      "P": 15.352,
+      "phase": "gas",
+      "E": 36.8961
+    },
+    {
+      "t_ms": 9000,
+      "T": 48.9288,
+      "eta": 6.6488,
+      "P": 6.9898,
+      "phase": "crystal",
+      "E": 0.3409
+    },
+    {
+      "t_ms": 9100,
+      "T": 25.0,
+      "eta": 7.1257,
+      "P": 5.3571,
+      "phase": "frozen_solid",
+      "E": 2.1412
+    },
+    {
+      "t_ms": 9200,
+      "T": 43.1128,
+      "eta": 6.8647,
+      "P": 7.6987,
+      "phase": "crystal",
+      "E": 3.6655
+    },
+    {
+      "t_ms": 9300,
+      "T": 35.0,
+      "eta": 7.0902,
+      "P": 6.25,
+      "phase": "frozen_solid",
+      "E": 5.0422
+    },
+    {
+      "t_ms": 9400,
+      "T": 25.0,
+      "eta": 6.6266,
+      "P": 4.4643,
+      "phase": "frozen_solid",
+      "E": 6.3302
+    },
+    {
+      "t_ms": 9500,
+      "T": 20.2747,
+      "eta": 5.1454,
+      "P": 2.4575,
+      "phase": "frozen_solid",
+      "E": 7.5793
+    },
+    {
+      "t_ms": 9600,
+      "T": 13.7878,
+      "eta": 5.3905,
+      "P": 2.5069,
+      "phase": "frozen_solid",
+      "E": 9.2763
+    },
+    {
+      "t_ms": 9700,
+      "T": 53.2021,
+      "eta": 5.0571,
+      "P": 6.4487,
+      "phase": "crystal",
+      "E": 12.5198
+    },
+    {
+      "t_ms": 9800,
+      "T": 62.5,
+      "eta": 2.4453,
+      "P": 8.0645,
+      "phase": "gas",
+      "E": 17.7547
+    },
+    {
+      "t_ms": 9900,
+      "T": 67.0778,
+      "eta": 2.6369,
+      "P": 8.6552,
+      "phase": "gas",
+      "E": 22.9518
+    },
+    {
+      "t_ms": 10000,
+      "T": 58.2795,
+      "eta": 3.3488,
+      "P": 8.0386,
+      "phase": "liquid",
+      "E": 0.7858
+    },
+    {
+      "t_ms": 10100,
+      "T": 29.477,
+      "eta": 3.8285,
+      "P": 6.0987,
+      "phase": "liquid",
+      "E": 4.6814
+    },
+    {
+      "t_ms": 10200,
+      "T": 82.5,
+      "eta": 3.5527,
+      "P": 14.2241,
+      "phase": "gas",
+      "E": 7.5421
+    },
+    {
+      "t_ms": 10300,
+      "T": 81.6578,
+      "eta": 1.8562,
+      "P": 9.8979,
+      "phase": "gas",
+      "E": 4.0446
+    },
+    {
+      "t_ms": 10400,
+      "T": 82.5,
+      "eta": 1.9841,
+      "P": 12.5,
+      "phase": "gas",
+      "E": 8.1294
+    },
+    {
+      "t_ms": 10500,
+      "T": 61.6993,
+      "eta": 3.5749,
+      "P": 6.1699,
+      "phase": "gas",
+      "E": 1.5538
+    },
+    {
+      "t_ms": 10600,
+      "T": 31.2193,
+      "eta": 4.083,
+      "P": 4.6829,
+      "phase": "liquid",
+      "E": 9.3497
+    },
+    {
+      "t_ms": 10700,
+      "T": 82.5,
+      "eta": 3.7928,
+      "P": 10.3125,
+      "phase": "gas",
+      "E": 15.6892
+    },
+    {
+      "t_ms": 10800,
+      "T": 79.3932,
+      "eta": 2.602,
+      "P": 7.5613,
+      "phase": "gas",
+      "E": 6.2407
+    },
+    {
+      "t_ms": 10900,
+      "T": 62.5,
+      "eta": 2.6441,
+      "P": 7.4405,
+      "phase": "gas",
+      "E": 12.0538
+    },
+    {
+      "t_ms": 11000,
+      "T": 40.9824,
+      "eta": 2.0084,
+      "P": 3.3229,
+      "phase": "liquid",
+      "E": 0.5451
+    },
+    {
+      "t_ms": 11100,
+      "T": 27.2548,
+      "eta": 2.4359,
+      "P": 3.6831,
+      "phase": "liquid",
+      "E": 3.6965
+    },
+    {
+      "t_ms": 11200,
+      "T": 44.7185,
+      "eta": 1.8613,
+      "P": 4.0653,
+      "phase": "liquid",
+      "E": 6.5705
+    },
+    {
+      "t_ms": 11300,
+      "T": 44.7185,
+      "eta": 1.6872,
+      "P": 4.4719,
+      "phase": "liquid",
+      "E": 9.1791
+    },
+    {
+      "t_ms": 11400,
+      "T": 35.8496,
+      "eta": 2.0175,
+      "P": 4.302,
+      "phase": "liquid",
+      "E": 11.4572
+    },
+    {
+      "t_ms": 11500,
+      "T": 19.0564,
+      "eta": 2.404,
+      "P": 2.7223,
+      "phase": "liquid",
+      "E": 12.9247
+    },
+    {
+      "t_ms": 11600,
+      "T": 19.183,
+      "eta": 2.6521,
+      "P": 4.5674,
+      "phase": "liquid",
+      "E": 13.7931
+    },
+    {
+      "t_ms": 11700,
+      "T": 44.812,
+      "eta": 1.6819,
+      "P": 7.4687,
+      "phase": "liquid",
+      "E": 18.5208
+    },
+    {
+      "t_ms": 11800,
+      "T": 46.0593,
+      "eta": 1.6408,
+      "P": 6.2808,
+      "phase": "liquid",
+      "E": 21.284
+    },
+    {
+      "t_ms": 11900,
+      "T": 34.4696,
+      "eta": 0.9775,
+      "P": 5.4426,
+      "phase": "liquid",
+      "E": 23.476
+    },
+    {
+      "t_ms": 12000,
+      "T": 27.6966,
+      "eta": 0.5225,
+      "P": 2.0266,
+      "phase": "liquid",
+      "E": 25.8668
+    },
+    {
+      "t_ms": 12100,
+      "T": 19.0564,
+      "eta": 0.6293,
+      "P": 2.324,
+      "phase": "liquid",
+      "E": 29.3422
+    },
+    {
+      "t_ms": 12200,
+      "T": 42.5617,
+      "eta": 0.5152,
+      "P": 3.6481,
+      "phase": "liquid",
+      "E": 34.2963
+    },
+    {
+      "t_ms": 12300,
+      "T": 44.7185,
+      "eta": 0.527,
+      "P": 4.1924,
+      "phase": "liquid",
+      "E": 37.4441
+    },
+    {
+      "t_ms": 12400,
+      "T": 31.2907,
+      "eta": 0.6155,
+      "P": 3.237,
+      "phase": "liquid",
+      "E": 40.7888
+    },
+    {
+      "t_ms": 12500,
+      "T": 30.8822,
+      "eta": 0.6959,
+      "P": 5.7904,
+      "phase": "liquid",
+      "E": 44.2658
+    },
+    {
+      "t_ms": 12600,
+      "T": 18.4237,
+      "eta": 1.0433,
+      "P": 5.7574,
+      "phase": "liquid",
+      "E": 48.7411
+    },
+    {
+      "t_ms": 12700,
+      "T": 42.5617,
+      "eta": 0.6143,
+      "P": 9.8219,
+      "phase": "liquid",
+      "E": 52.7066
+    },
+    {
+      "t_ms": 12800,
+      "T": 63.041,
+      "eta": 1.1809,
+      "P": 11.8202,
+      "phase": "gas",
+      "E": 54.4865
+    },
+    {
+      "t_ms": 12900,
+      "T": 98.2574,
+      "eta": 0.4215,
+      "P": 15.7212,
+      "phase": "gas",
+      "E": 59.3316
+    },
+    {
+      "t_ms": 13000,
+      "T": 69.1886,
+      "eta": 1.5876,
+      "P": 7.4131,
+      "phase": "gas",
+      "E": 68.2971
+    },
+    {
+      "t_ms": 13100,
+      "T": 31.6993,
+      "eta": 2.3568,
+      "P": 5.6606,
+      "phase": "liquid",
+      "E": 76.3202
+    },
+    {
+      "t_ms": 13200,
+      "T": 58.9541,
+      "eta": 1.7853,
+      "P": 7.0745,
+      "phase": "liquid",
+      "E": 80.9107
+    },
+    {
+      "t_ms": 13300,
+      "T": 55.0,
+      "eta": 1.7892,
+      "P": 5.8929,
+      "phase": "liquid",
+      "E": 84.7135
+    },
+    {
+      "t_ms": 13400,
+      "T": 57.5489,
+      "eta": 1.795,
+      "P": 6.9059,
+      "phase": "liquid",
+      "E": 88.2691
+    },
+    {
+      "t_ms": 13500,
+      "T": 58.4386,
+      "eta": 3.179,
+      "P": 8.0605,
+      "phase": "liquid",
+      "E": 2.1637
+    },
+    {
+      "t_ms": 13600,
+      "T": 30.0,
+      "eta": 3.5519,
+      "P": 6.2069,
+      "phase": "liquid",
+      "E": 13.2286
+    },
+    {
+      "t_ms": 13700,
+      "T": 60.0,
+      "eta": 3.2727,
+      "P": 8.2759,
+      "phase": "liquid",
+      "E": 20.5295
+    },
+    {
+      "t_ms": 13800,
+      "T": 60.0,
+      "eta": 3.2675,
+      "P": 8.2759,
+      "phase": "liquid",
+      "E": 26.7121
+    },
+    {
+      "t_ms": 13900,
+      "T": 57.5489,
+      "eta": 3.2709,
+      "P": 7.9378,
+      "phase": "liquid",
+      "E": 32.813
+    },
+    {
+      "t_ms": 14000,
+      "T": 46.4386,
+      "eta": 3.5537,
+      "P": 6.6341,
+      "phase": "liquid",
+      "E": 1.3781
+    },
+    {
+      "t_ms": 14100,
+      "T": 24.0564,
+      "eta": 3.794,
+      "P": 5.1549,
+      "phase": "liquid",
+      "E": 8.536
+    },
+    {
+      "t_ms": 14200,
+      "T": 38.1128,
+      "eta": 3.4719,
+      "P": 5.4447,
+      "phase": "liquid",
+      "E": 12.8209
+    },
+    {
+      "t_ms": 14300,
+      "T": 31.2256,
+      "eta": 3.4738,
+      "P": 4.4608,
+      "phase": "liquid",
+      "E": 15.9487
+    },
+    {
+      "t_ms": 14400,
+      "T": 30.0,
+      "eta": 3.4736,
+      "P": 4.2857,
+      "phase": "liquid",
+      "E": 18.8288
+    },
+    {
+      "t_ms": 14500,
+      "T": 43.419,
+      "eta": 2.1595,
+      "P": 5.1081,
+      "phase": "liquid",
+      "E": 1.583
+    },
+    {
+      "t_ms": 14600,
+      "T": 33.75,
+      "eta": 3.3578,
+      "P": 6.9485,
+      "phase": "liquid",
+      "E": 11.1117
+    },
+    {
+      "t_ms": 14700,
+      "T": 72.5815,
+      "eta": 2.5416,
+      "P": 9.0727,
+      "phase": "gas",
+      "E": 16.2419
+    },
+    {
+      "t_ms": 14800,
+      "T": 61.3932,
+      "eta": 2.6841,
+      "P": 8.1858,
+      "phase": "gas",
+      "E": 19.439
+    },
+    {
+      "t_ms": 14900,
+      "T": 63.3985,
+      "eta": 2.4313,
+      "P": 8.7446,
+      "phase": "gas",
+      "E": 24.2236
+    },
+    {
+      "t_ms": 15000,
+      "T": 35.3308,
+      "eta": 3.8643,
+      "P": 3.9256,
+      "phase": "liquid",
+      "E": 1.1309
+    },
+    {
+      "t_ms": 15100,
+      "T": 24.1938,
+      "eta": 5.2743,
+      "P": 4.4803,
+      "phase": "frozen_solid",
+      "E": 0.0
+    },
+    {
+      "t_ms": 15200,
+      "T": 43.1128,
+      "eta": 5.1301,
+      "P": 6.3871,
+      "phase": "crystal",
+      "E": 4.7627
+    },
+    {
+      "t_ms": 15300,
+      "T": 50.4328,
+      "eta": 4.9933,
+      "P": 7.4715,
+      "phase": "crystal",
+      "E": 8.0673
+    },
+    {
+      "t_ms": 15400,
+      "T": 56.2907,
+      "eta": 4.9889,
+      "P": 8.3394,
+      "phase": "crystal",
+      "E": 11.4599
+    },
+    {
+      "t_ms": 15500,
+      "T": 40.8822,
+      "eta": 6.4289,
+      "P": 6.5412,
+      "phase": "crystal",
+      "E": 15.7092
+    },
+    {
+      "t_ms": 15600,
+      "T": 0.0,
+      "eta": 6.4289,
+      "P": 0.0,
+      "phase": "frozen_solid",
+      "E": 18.5761
+    },
+    {
+      "t_ms": 15700,
+      "T": 0.0,
+      "eta": 6.4289,
+      "P": 0.0,
+      "phase": "frozen_solid",
+      "E": 18.5761
+    },
+    {
+      "t_ms": 15800,
+      "T": 0.0,
+      "eta": 6.4289,
+      "P": 0.0,
+      "phase": "frozen_solid",
+      "E": 18.5761
+    },
+    {
+      "t_ms": 15900,
+      "T": 0.0,
+      "eta": 0.0,
+      "P": 0.0,
+      "phase": "liquid",
+      "E": 18.5761
+    },
+    {
+      "t_ms": 16000,
+      "T": 0.0,
+      "eta": 0.0,
+      "P": 0.0,
+      "phase": "liquid",
+      "E": 18.5761
+    },
+    {
+      "t_ms": 16100,
+      "T": 0.0,
+      "eta": 2.1528,
+      "P": 0.0,
+      "phase": "liquid",
+      "E": 18.5761
+    },
+    {
+      "t_ms": 16200,
+      "T": 10.0,
+      "eta": 1.3724,
+      "P": 10.0,
+      "phase": "liquid",
+      "E": 18.5761
+    },
+    {
+      "t_ms": 16300,
+      "T": 9.183,
+      "eta": 2.2191,
+      "P": 1.4128,
+      "phase": "liquid",
+      "E": 18.5761
+    },
+    {
+      "t_ms": 16400,
+      "T": 8.1128,
+      "eta": 2.2191,
+      "P": 1.2481,
+      "phase": "liquid",
+      "E": 18.5761
+    },
+    {
+      "t_ms": 16500,
+      "T": 4.0564,
+      "eta": 2.2191,
+      "P": 0.6241,
+      "phase": "liquid",
+      "E": 18.5761
+    },
+    {
+      "t_ms": 16600,
+      "T": 0.0,
+      "eta": 2.3796,
+      "P": 0.0,
+      "phase": "liquid",
+      "E": 18.5761
+    },
+    {
+      "t_ms": 16700,
+      "T": 0.0,
+      "eta": 2.2191,
+      "P": 0.0,
+      "phase": "liquid",
+      "E": 18.5761
+    },
+    {
+      "t_ms": 16800,
+      "T": 16.2256,
+      "eta": 0.4509,
+      "P": 1.5453,
+      "phase": "liquid",
+      "E": 19.6349
+    },
+    {
+      "t_ms": 16900,
+      "T": 27.419,
+      "eta": 0.4165,
+      "P": 2.7419,
+      "phase": "liquid",
+      "E": 20.8721
+    },
+    {
+      "t_ms": 17000,
+      "T": 16.645,
+      "eta": 0.4821,
+      "P": 1.8494,
+      "phase": "liquid",
+      "E": 22.4123
+    },
+    {
+      "t_ms": 17100,
+      "T": 35.8496,
+      "eta": 4.9858,
+      "P": 6.5181,
+      "phase": "frozen_solid",
+      "E": 0.0
+    },
+    {
+      "t_ms": 17200,
+      "T": 75.4474,
+      "eta": 4.1823,
+      "P": 9.1451,
+      "phase": "gas",
+      "E": 4.8157
+    },
+    {
+      "t_ms": 17300,
+      "T": 56.3989,
+      "eta": 4.1075,
+      "P": 6.8362,
+      "phase": "liquid",
+      "E": 1.862
+    },
+    {
+      "t_ms": 17400,
+      "T": 40.7034,
+      "eta": 4.1075,
+      "P": 4.9337,
+      "phase": "liquid",
+      "E": 0.8687
+    },
+    {
+      "t_ms": 17500,
+      "T": 12.2503,
+      "eta": 4.1075,
+      "P": 1.4849,
+      "phase": "liquid",
+      "E": 0.165
+    },
+    {
+      "t_ms": 17600,
+      "T": 0.0,
+      "eta": 5.3572,
+      "P": 0.0,
+      "phase": "frozen_solid",
+      "E": 0.0
+    },
+    {
+      "t_ms": 17700,
+      "T": 26.7472,
+      "eta": 4.1081,
+      "P": 3.3434,
+      "phase": "liquid",
+      "E": 0.5533
+    },
+    {
+      "t_ms": 17800,
+      "T": 46.2712,
+      "eta": 1.7597,
+      "P": 6.6102,
+      "phase": "liquid",
+      "E": 1.246
+    },
+    {
+      "t_ms": 17900,
+      "T": 59.6446,
+      "eta": 1.6112,
+      "P": 8.8362,
+      "phase": "liquid",
+      "E": 4.4575
+    },
+    {
+      "t_ms": 18000,
+      "T": 24.1504,
+      "eta": 1.6921,
+      "P": 3.8641,
+      "phase": "liquid",
+      "E": 8.5727
+    },
+    {
+      "t_ms": 18100,
+      "T": 24.1504,
+      "eta": 3.8434,
+      "P": 7.7281,
+      "phase": "liquid",
+      "E": 11.6106
+    },
+    {
+      "t_ms": 18200,
+      "T": 74.4035,
+      "eta": 2.1514,
+      "P": 16.5341,
+      "phase": "gas",
+      "E": 21.5222
+    },
+    {
+      "t_ms": 18300,
+      "T": 56.029,
+      "eta": 2.0021,
+      "P": 12.4509,
+      "phase": "liquid",
+      "E": 27.2411
+    },
+    {
+      "t_ms": 18400,
+      "T": 47.1285,
+      "eta": 1.9996,
+      "P": 10.473,
+      "phase": "liquid",
+      "E": 32.3083
+    },
+    {
+      "t_ms": 18500,
+      "T": 15.6128,
+      "eta": 1.9928,
+      "P": 3.4695,
+      "phase": "liquid",
+      "E": 36.766
+    },
+    {
+      "t_ms": 18600,
+      "T": 0.0,
+      "eta": 3.2373,
+      "P": 0.0,
+      "phase": "liquid",
+      "E": 36.766
+    },
+    {
+      "t_ms": 18700,
+      "T": 42.8538,
+      "eta": 2.66,
+      "P": 10.0832,
+      "phase": "liquid",
+      "E": 38.3511
+    },
+    {
+      "t_ms": 18800,
+      "T": 62.838,
+      "eta": 1.7546,
+      "P": 10.0541,
+      "phase": "gas",
+      "E": 1.6675
+    },
+    {
+      "t_ms": 18900,
+      "T": 74.7054,
+      "eta": 1.5908,
+      "P": 12.4509,
+      "phase": "gas",
+      "E": 5.7777
+    },
+    {
+      "t_ms": 19000,
+      "T": 24.1504,
+      "eta": 1.6706,
+      "P": 4.391,
+      "phase": "liquid",
+      "E": 10.8315
+    },
+    {
+      "t_ms": 19100,
+      "T": 24.1504,
+      "eta": 3.9016,
+      "P": 8.782,
+      "phase": "liquid",
+      "E": 13.7611
+    },
+    {
+      "t_ms": 19200,
+      "T": 74.4035,
+      "eta": 2.231,
+      "P": 16.5341,
+      "phase": "gas",
+      "E": 21.2901
+    },
+    {
+      "t_ms": 19300,
+      "T": 65.3672,
+      "eta": 2.1278,
+      "P": 14.526,
+      "phase": "gas",
+      "E": 26.3185
+    },
+    {
+      "t_ms": 19400,
+      "T": 71.7308,
+      "eta": 1.7793,
+      "P": 16.8778,
+      "phase": "gas",
+      "E": 32.9284
+    },
+    {
+      "t_ms": 19500,
+      "T": 18.1128,
+      "eta": 1.6796,
+      "P": 4.2618,
+      "phase": "liquid",
+      "E": 39.3921
+    },
+    {
+      "t_ms": 19600,
+      "T": 7.0349,
+      "eta": 2.0913,
+      "P": 2.8967,
+      "phase": "liquid",
+      "E": 40.9799
+    },
+    {
+      "t_ms": 19700,
+      "T": 41.4868,
+      "eta": 1.4153,
+      "P": 10.3717,
+      "phase": "liquid",
+      "E": 45.069
+    },
+    {
+      "t_ms": 19800,
+      "T": 78.0063,
+      "eta": 0.1111,
+      "P": 22.2875,
+      "phase": "gas",
+      "E": 52.478
+    },
+    {
+      "t_ms": 19900,
+      "T": 103.3985,
+      "eta": 0.3652,
+      "P": 21.7681,
+      "phase": "gas",
+      "E": 62.7186
+    },
+    {
+      "t_ms": 20000,
+      "T": 42.5163,
+      "eta": 0.2908,
+      "P": 8.9508,
+      "phase": "liquid",
+      "E": 71.1771
+    },
+    {
+      "t_ms": 20100,
+      "T": 57.104,
+      "eta": 2.5524,
+      "P": 26.8725,
+      "phase": "liquid",
+      "E": 79.4647
+    },
+    {
+      "t_ms": 20200,
+      "T": 85.7789,
+      "eta": 2.3349,
+      "P": 21.4447,
+      "phase": "gas",
+      "E": 89.3336
+    },
+    {
+      "t_ms": 20300,
+      "T": 44.7334,
+      "eta": 2.3013,
+      "P": 11.1834,
+      "phase": "liquid",
+      "E": 91.9921
+    },
+    {
+      "t_ms": 20400,
+      "T": 44.7334,
+      "eta": 2.3013,
+      "P": 11.1834,
+      "phase": "liquid",
+      "E": 94.1683
+    },
+    {
+      "t_ms": 20500,
+      "T": 15.6128,
+      "eta": 2.3013,
+      "P": 3.9032,
+      "phase": "liquid",
+      "E": 96.0272
+    },
+    {
+      "t_ms": 20600,
+      "T": 0.0,
+      "eta": 3.9333,
+      "P": 0.0,
+      "phase": "liquid",
+      "E": 96.0272
+    },
+    {
+      "t_ms": 20700,
+      "T": 24.6607,
+      "eta": 1.3055,
+      "P": 7.3982,
+      "phase": "liquid",
+      "E": 96.5418
+    },
+    {
+      "t_ms": 20800,
+      "T": 21.2256,
+      "eta": 1.3276,
+      "P": 6.3677,
+      "phase": "liquid",
+      "E": 97.0516
+    },
+    {
+      "t_ms": 20900,
+      "T": 51.6976,
+      "eta": 1.7007,
+      "P": 17.2325,
+      "phase": "liquid",
+      "E": 98.3825
+    },
+    {
+      "t_ms": 21000,
+      "T": 63.3985,
+      "eta": 1.0791,
+      "P": 14.6304,
+      "phase": "gas",
+      "E": 101.3966
+    },
+    {
+      "t_ms": 21100,
+      "T": 47.5489,
+      "eta": 1.0724,
+      "P": 13.985,
+      "phase": "liquid",
+      "E": 105.1865
+    },
+    {
+      "t_ms": 21200,
+      "T": 113.4925,
+      "eta": 0.0589,
+      "P": 113.4925,
+      "phase": "gas",
+      "E": 107.3548
+    },
+    {
+      "t_ms": 21300,
+      "T": 99.9386,
+      "eta": 1.0304,
+      "P": 18.1707,
+      "phase": "gas",
+      "E": 115.3462
+    },
+    {
+      "t_ms": 21400,
+      "T": 90.4737,
+      "eta": 1.0191,
+      "P": 16.4498,
+      "phase": "gas",
+      "E": 123.1352
+    },
+    {
+      "t_ms": 21500,
+      "T": 44.5168,
+      "eta": 0.7575,
+      "P": 8.9034,
+      "phase": "liquid",
+      "E": 133.117
+    },
+    {
+      "t_ms": 21600,
+      "T": 26.7101,
+      "eta": 0.8343,
+      "P": 7.4195,
+      "phase": "liquid",
+      "E": 138.9745
+    },
+    {
+      "t_ms": 21700,
+      "T": 54.9833,
+      "eta": 0.0554,
+      "P": 54.9833,
+      "phase": "liquid",
+      "E": 139.9865
+    },
+    {
+      "t_ms": 21800,
+      "T": 135.9925,
+      "eta": 0.6531,
+      "P": 22.6654,
+      "phase": "gas",
+      "E": 143.8989
+    },
+    {
+      "t_ms": 21900,
+      "T": 153.8233,
+      "eta": 0.4976,
+      "P": 28.4858,
+      "phase": "gas",
+      "E": 155.9807
+    },
+    {
+      "t_ms": 22000,
+      "T": 92.5489,
+      "eta": 0.6805,
+      "P": 16.0955,
+      "phase": "gas",
+      "E": 172.7239
+    },
+    {
+      "t_ms": 22100,
+      "T": 65.0326,
+      "eta": 3.8306,
+      "P": 22.7614,
+      "phase": "gas",
+      "E": 185.7232
+    },
+    {
+      "t_ms": 22200,
+      "T": 46.2744,
+      "eta": 2.4153,
+      "P": 10.6787,
+      "phase": "liquid",
+      "E": 188.0576
+    },
+    {
+      "t_ms": 22300,
+      "T": 0.0,
+      "eta": 2.4153,
+      "P": 0.0,
+      "phase": "liquid",
+      "E": 188.0576
+    },
+    {
+      "t_ms": 22400,
+      "T": 0.0,
+      "eta": 2.4153,
+      "P": 0.0,
+      "phase": "liquid",
+      "E": 188.0576
+    },
+    {
+      "t_ms": 22500,
+      "T": 0.0,
+      "eta": 0.0,
+      "P": 0.0,
+      "phase": "liquid",
+      "E": 188.0576
+    },
+    {
+      "t_ms": 22600,
+      "T": 0.0,
+      "eta": 0.1081,
+      "P": 0.0,
+      "phase": "liquid",
+      "E": 188.0576
+    },
+    {
+      "t_ms": 22700,
+      "T": 0.0,
+      "eta": 0.1081,
+      "P": 0.0,
+      "phase": "liquid",
+      "E": 188.0576
+    },
+    {
+      "t_ms": 22800,
+      "T": 10.0,
+      "eta": 0.028,
+      "P": 10.0,
+      "phase": "liquid",
+      "E": 189.0832
+    },
+    {
+      "t_ms": 22900,
+      "T": 9.183,
+      "eta": 0.0284,
+      "P": 9.183,
+      "phase": "liquid",
+      "E": 190.223
+    },
+    {
+      "t_ms": 23000,
+      "T": 5.0,
+      "eta": 0.0277,
+      "P": 5.0,
+      "phase": "liquid",
+      "E": 191.2817
+    },
+    {
+      "t_ms": 23100,
+      "T": 4.5915,
+      "eta": 0.0805,
+      "P": 1.8366,
+      "phase": "liquid",
+      "E": 192.3905
+    },
+    {
+      "t_ms": 23200,
+      "T": 39.6241,
+      "eta": 0.0528,
+      "P": 39.6241,
+      "phase": "liquid",
+      "E": 194.2861
+    },
+    {
+      "t_ms": 23300,
+      "T": 64.6241,
+      "eta": 7.5986,
+      "P": 11.239,
+      "phase": "crystal",
+      "E": 5.2312
+    },
+    {
+      "t_ms": 23400,
+      "T": 51.6993,
+      "eta": 7.7117,
+      "P": 11.239,
+      "phase": "crystal",
+      "E": 9.25
+    },
+    {
+      "t_ms": 23500,
+      "T": 40.8822,
+      "eta": 5.7465,
+      "P": 7.1099,
+      "phase": "crystal",
+      "E": 13.9201
+    },
+    {
+      "t_ms": 23600,
+      "T": 12.5,
+      "eta": 5.8557,
+      "P": 2.7174,
+      "phase": "frozen_solid",
+      "E": 17.1443
+    },
+    {
+      "t_ms": 23700,
+      "T": 38.4386,
+      "eta": 5.8557,
+      "P": 8.3562,
+      "phase": "frozen_solid",
+      "E": 20.1371
+    },
+    {
+      "t_ms": 23800,
+      "T": 50.4328,
+      "eta": 6.317,
+      "P": 8.7709,
+      "phase": "crystal",
+      "E": 23.6922
+    },
+    {
+      "t_ms": 23900,
+      "T": 58.0482,
+      "eta": 6.4158,
+      "P": 12.6192,
+      "phase": "crystal",
+      "E": 26.432
+    },
+    {
+      "t_ms": 24000,
+      "T": 54.5096,
+      "eta": 5.1499,
+      "P": 11.8499,
+      "phase": "crystal",
+      "E": 32.6535
+    },
+    {
+      "t_ms": 24100,
+      "T": 12.5,
+      "eta": 5.1957,
+      "P": 3.2609,
+      "phase": "frozen_solid",
+      "E": 41.4648
+    },
+    {
+      "t_ms": 24200,
+      "T": 47.9574,
+      "eta": 5.1957,
+      "P": 12.5106,
+      "phase": "crystal",
+      "E": 47.7607
+    },
+    {
+      "t_ms": 24300,
+      "T": 50.0652,
+      "eta": 3.0427,
+      "P": 11.78,
+      "phase": "liquid",
+      "E": 52.7469
+    },
+    {
+      "t_ms": 24400,
+      "T": 0.0,
+      "eta": 3.0427,
+      "P": 0.0,
+      "phase": "liquid",
+      "E": 53.9831
+    },
+    {
+      "t_ms": 24500,
+      "T": 0.0,
+      "eta": 3.0427,
+      "P": 0.0,
+      "phase": "liquid",
+      "E": 53.9831
+    },
+    {
+      "t_ms": 24600,
+      "T": 0.0,
+      "eta": 3.0427,
+      "P": 0.0,
+      "phase": "liquid",
+      "E": 53.9831
+    },
+    {
+      "t_ms": 24700,
+      "T": 0.0,
+      "eta": 0.0,
+      "P": 0.0,
+      "phase": "liquid",
+      "E": 53.9831
+    },
+    {
+      "t_ms": 24800,
+      "T": 0.0,
+      "eta": 0.1146,
+      "P": 0.0,
+      "phase": "liquid",
+      "E": 53.9831
+    },
+    {
+      "t_ms": 24900,
+      "T": 10.0,
+      "eta": 0.0297,
+      "P": 10.0,
+      "phase": "liquid",
+      "E": 54.5985
+    },
+    {
+      "t_ms": 25000,
+      "T": 7.9248,
+      "eta": 0.0301,
+      "P": 7.9248,
+      "phase": "liquid",
+      "E": 55.9232
+    },
+    {
+      "t_ms": 25100,
+      "T": 15.8496,
+      "eta": 0.6208,
+      "P": 2.9718,
+      "phase": "liquid",
+      "E": 59.1509
+    },
+    {
+      "t_ms": 25200,
+      "T": 30.0,
+      "eta": 0.4204,
+      "P": 3.75,
+      "phase": "liquid",
+      "E": 61.6163
+    },
+    {
+      "t_ms": 25300,
+      "T": 57.6578,
+      "eta": 0.3238,
+      "P": 4.6126,
+      "phase": "liquid",
+      "E": 65.4767
+    },
+    {
+      "t_ms": 25400,
+      "T": 75.0,
+      "eta": 7.1079,
+      "P": 10.0,
+      "phase": "crystal",
+      "E": 3.4088
+    },
+    {
+      "t_ms": 25500,
+      "T": 15.8496,
+      "eta": 7.0136,
+      "P": 2.1862,
+      "phase": "frozen_solid",
+      "E": 7.5881
+    },
+    {
+      "t_ms": 25600,
+      "T": 14.0368,
+      "eta": 7.0394,
+      "P": 2.4201,
+      "phase": "frozen_solid",
+      "E": 9.9888
+    },
+    {
+      "t_ms": 25700,
+      "T": 22.5163,
+      "eta": 6.9339,
+      "P": 3.1057,
+      "phase": "frozen_solid",
+      "E": 12.237
+    },
+    {
+      "t_ms": 25800,
+      "T": 39.6241,
+      "eta": 7.1161,
+      "P": 5.8702,
+      "phase": "crystal",
+      "E": 14.0499
+    },
+    {
+      "t_ms": 25900,
+      "T": 56.2907,
+      "eta": 7.4062,
+      "P": 10.4242,
+      "phase": "crystal",
+      "E": 17.8179
+    },
+    {
+      "t_ms": 26000,
+      "T": 12.6082,
+      "eta": 7.3381,
+      "P": 2.4247,
+      "phase": "frozen_solid",
+      "E": 20.9159
+    },
+    {
+      "t_ms": 26100,
+      "T": 12.9248,
+      "eta": 7.403,
+      "P": 2.9826,
+      "phase": "frozen_solid",
+      "E": 22.8586
+    },
+    {
+      "t_ms": 26200,
+      "T": 22.5163,
+      "eta": 7.3176,
+      "P": 4.3301,
+      "phase": "frozen_solid",
+      "E": 24.7333
+    },
+    {
+      "t_ms": 26300,
+      "T": 22.9574,
+      "eta": 7.4658,
+      "P": 4.5915,
+      "phase": "frozen_solid",
+      "E": 26.0013
+    },
+    {
+      "t_ms": 26400,
+      "T": 56.2907,
+      "eta": 10.9629,
+      "P": 11.2581,
+      "phase": "crystal",
+      "E": 28.4325
+    },
+    {
+      "t_ms": 26500,
+      "T": 12.6082,
+      "eta": 13.765,
+      "P": 2.5216,
+      "phase": "frozen_solid",
+      "E": 30.7139
+    },
+    {
+      "t_ms": 26600,
+      "T": 12.9248,
+      "eta": 13.9176,
+      "P": 3.2312,
+      "phase": "frozen_solid",
+      "E": 32.2942
+    },
+    {
+      "t_ms": 26700,
+      "T": 22.5163,
+      "eta": 13.6926,
+      "P": 4.5033,
+      "phase": "frozen_solid",
+      "E": 34.0555
+    },
+    {
+      "t_ms": 26800,
+      "T": 15.8496,
+      "eta": 14.0917,
+      "P": 3.1699,
+      "phase": "frozen_solid",
+      "E": 34.8081
+    },
+    {
+      "t_ms": 26900,
+      "T": 9.183,
+      "eta": 14.0996,
+      "P": 1.8366,
+      "phase": "frozen_solid",
+      "E": 35.2947
+    },
+    {
+      "t_ms": 27000,
+      "T": 5.0,
+      "eta": 13.6836,
+      "P": 1.0,
+      "phase": "frozen_solid",
+      "E": 35.7222
+    },
+    {
+      "t_ms": 27100,
+      "T": 4.5915,
+      "eta": 14.2459,
+      "P": 1.1479,
+      "phase": "frozen_solid",
+      "E": 36.4332
+    },
+    {
+      "t_ms": 27200,
+      "T": 9.183,
+      "eta": 14.1023,
+      "P": 1.8366,
+      "phase": "frozen_solid",
+      "E": 36.8407
+    },
+    {
+      "t_ms": 27300,
+      "T": 15.8496,
+      "eta": 14.1075,
+      "P": 3.1699,
+      "phase": "frozen_solid",
+      "E": 37.3774
+    },
+    {
+      "t_ms": 27400,
+      "T": 9.183,
+      "eta": 14.139,
+      "P": 1.8366,
+      "phase": "frozen_solid",
+      "E": 37.8641
+    },
+    {
+      "t_ms": 27500,
+      "T": 5.0,
+      "eta": 13.6868,
+      "P": 1.0,
+      "phase": "frozen_solid",
+      "E": 38.2759
+    },
+    {
+      "t_ms": 27600,
+      "T": 4.5915,
+      "eta": 14.2515,
+      "P": 1.1479,
+      "phase": "frozen_solid",
+      "E": 38.9309
+    },
+    {
+      "t_ms": 27700,
+      "T": 9.183,
+      "eta": 14.1047,
+      "P": 1.8366,
+      "phase": "frozen_solid",
+      "E": 39.3383
+    },
+    {
+      "t_ms": 27800,
+      "T": 15.8496,
+      "eta": 11.0558,
+      "P": 3.1699,
+      "phase": "frozen_solid",
+      "E": 39.875
+    },
+    {
+      "t_ms": 27900,
+      "T": 9.183,
+      "eta": 11.0558,
+      "P": 1.8366,
+      "phase": "frozen_solid",
+      "E": 40.3617
+    },
+    {
+      "t_ms": 28000,
+      "T": 7.5,
+      "eta": 10.8903,
+      "P": 1.5,
+      "phase": "frozen_solid",
+      "E": 40.8531
+    },
+    {
+      "t_ms": 28100,
+      "T": 7.9248,
+      "eta": 11.1152,
+      "P": 1.9812,
+      "phase": "frozen_solid",
+      "E": 42.114
+    },
+    {
+      "t_ms": 28200,
+      "T": 9.183,
+      "eta": 11.0569,
+      "P": 1.8366,
+      "phase": "frozen_solid",
+      "E": 42.5528
+    },
+    {
+      "t_ms": 28300,
+      "T": 27.5489,
+      "eta": 11.058,
+      "P": 5.5098,
+      "phase": "frozen_solid",
+      "E": 43.3511
+    },
+    {
+      "t_ms": 28400,
+      "T": 75.6492,
+      "eta": 6.635,
+      "P": 13.043,
+      "phase": "crystal",
+      "E": 46.2685
+    },
+    {
+      "t_ms": 28500,
+      "T": 13.75,
+      "eta": 6.375,
+      "P": 1.8966,
+      "phase": "frozen_solid",
+      "E": 49.2529
+    },
+    {
+      "t_ms": 28600,
+      "T": 12.6082,
+      "eta": 6.5889,
+      "P": 2.1738,
+      "phase": "frozen_solid",
+      "E": 50.9268
+    },
+    {
+      "t_ms": 28700,
+      "T": 28.0735,
+      "eta": 6.3891,
+      "P": 3.8722,
+      "phase": "frozen_solid",
+      "E": 52.416
+    },
+    {
+      "t_ms": 28800,
+      "T": 18.3659,
+      "eta": 6.3808,
+      "P": 2.5332,
+      "phase": "frozen_solid",
+      "E": 53.3882
+    },
+    {
+      "t_ms": 28900,
+      "T": 38.4386,
+      "eta": 0.6824,
+      "P": 11.5316,
+      "phase": "liquid",
+      "E": 55.8157
+    },
+    {
+      "t_ms": 29000,
+      "T": 11.2581,
+      "eta": 0.6991,
+      "P": 3.3774,
+      "phase": "liquid",
+      "E": 58.4565
+    },
+    {
+      "t_ms": 29100,
+      "T": 11.6096,
+      "eta": 0.7703,
+      "P": 4.6439,
+      "phase": "liquid",
+      "E": 60.3799
+    },
+    {
+      "t_ms": 29200,
+      "T": 19.2193,
+      "eta": 0.7023,
+      "P": 5.7658,
+      "phase": "liquid",
+      "E": 62.0297
+    },
+    {
+      "t_ms": 29300,
+      "T": 18.3659,
+      "eta": 0.6991,
+      "P": 5.5098,
+      "phase": "liquid",
+      "E": 63.3504
+    },
+    {
+      "t_ms": 29400,
+      "T": 46.4386,
+      "eta": 3.6728,
+      "P": 8.7072,
+      "phase": "liquid",
+      "E": 1.9258
+    },
+    {
+      "t_ms": 29500,
+      "T": 12.9248,
+      "eta": 3.6552,
+      "P": 2.4234,
+      "phase": "liquid",
+      "E": 4.6177
+    },
+    {
+      "t_ms": 29600,
+      "T": 11.6096,
+      "eta": 3.809,
+      "P": 2.9024,
+      "phase": "liquid",
+      "E": 6.0582
+    },
+    {
+      "t_ms": 29700,
+      "T": 19.2193,
+      "eta": 3.6608,
+      "P": 3.6036,
+      "phase": "liquid",
+      "E": 7.3102
+    },
+    {
+      "t_ms": 29800,
+      "T": 13.7744,
+      "eta": 3.6546,
+      "P": 2.5827,
+      "phase": "liquid",
+      "E": 8.1314
+    },
+    {
+      "t_ms": 29900,
+      "T": 12.1692,
+      "eta": 1.4153,
+      "P": 1.5211,
+      "phase": "liquid",
+      "E": 0.4488
+    },
+    {
+      "t_ms": 30000,
+      "T": 6.8548,
+      "eta": 2.0763,
+      "P": 1.2853,
+      "phase": "liquid",
+      "E": 1.1807
+    },
+    {
+      "t_ms": 30100,
+      "T": 8.1128,
+      "eta": 2.8305,
+      "P": 2.1349,
+      "phase": "liquid",
+      "E": 1.8846
+    },
+    {
+      "t_ms": 30200,
+      "T": 28.8289,
+      "eta": 2.2446,
+      "P": 4.5519,
+      "phase": "liquid",
+      "E": 4.0923
+    },
+    {
+      "t_ms": 30300,
+      "T": 40.0,
+      "eta": 2.2721,
+      "P": 6.3158,
+      "phase": "liquid",
+      "E": 5.5616
+    },
+    {
+      "t_ms": 30400,
+      "T": 51.6993,
+      "eta": 2.1662,
+      "P": 9.1234,
+      "phase": "liquid",
+      "E": 2.1905
+    },
+    {
+      "t_ms": 30500,
+      "T": 14.0368,
+      "eta": 2.1426,
+      "P": 2.4771,
+      "phase": "liquid",
+      "E": 5.1653
+    },
+    {
+      "t_ms": 30600,
+      "T": 34.8289,
+      "eta": 3.1746,
+      "P": 9.9511,
+      "phase": "liquid",
+      "E": 8.9222
+    },
+    {
+      "t_ms": 30700,
+      "T": 50.4328,
+      "eta": 1.032,
+      "P": 7.2047,
+      "phase": "liquid",
+      "E": 15.0372
+    },
+    {
+      "t_ms": 30800,
+      "T": 46.4386,
+      "eta": 1.047,
+      "P": 6.6341,
+      "phase": "liquid",
+      "E": 18.7669
+    },
+    {
+      "t_ms": 30900,
+      "T": 56.1471,
+      "eta": 2.1246,
+      "P": 6.0158,
+      "phase": "liquid",
+      "E": 21.1368
+    },
+    {
+      "t_ms": 31000,
+      "T": 15.0,
+      "eta": 2.1133,
+      "P": 1.6071,
+      "phase": "liquid",
+      "E": 21.6724
+    },
+    {
+      "t_ms": 31100,
+      "T": 34.8289,
+      "eta": 2.5127,
+      "P": 6.9658,
+      "phase": "liquid",
+      "E": 23.1509
+    },
+    {
+      "t_ms": 31200,
+      "T": 56.1471,
+      "eta": 0.3993,
+      "P": 9.3578,
+      "phase": "liquid",
+      "E": 28.4176
+    },
+    {
+      "t_ms": 31300,
+      "T": 46.4386,
+      "eta": 0.4278,
+      "P": 7.7398,
+      "phase": "liquid",
+      "E": 31.7728
+    },
+    {
+      "t_ms": 31400,
+      "T": 56.1471,
+      "eta": 3.1585,
+      "P": 12.957,
+      "phase": "liquid",
+      "E": 35.3959
+    },
+    {
+      "t_ms": 31500,
+      "T": 15.0,
+      "eta": 3.1606,
+      "P": 3.4615,
+      "phase": "liquid",
+      "E": 37.6746
+    },
+    {
+      "t_ms": 31600,
+      "T": 11.6096,
+      "eta": 3.2757,
+      "P": 3.5722,
+      "phase": "liquid",
+      "E": 39.1526
+    },
+    {
+      "t_ms": 31700,
+      "T": 23.2193,
+      "eta": 3.1588,
+      "P": 5.3583,
+      "phase": "liquid",
+      "E": 40.5962
+    },
+    {
+      "t_ms": 31800,
+      "T": 13.7744,
+      "eta": 3.1628,
+      "P": 3.1787,
+      "phase": "liquid",
+      "E": 41.4879
+    },
+    {
+      "t_ms": 31900,
+      "T": 22.5,
+      "eta": 3.4893,
+      "P": 2.7,
+      "phase": "liquid",
+      "E": 0.5856
+    },
+    {
+      "t_ms": 32000,
+      "T": 7.6096,
+      "eta": 3.478,
+      "P": 0.9132,
+      "phase": "liquid",
+      "E": 1.5448
+    },
+    {
+      "t_ms": 32100,
+      "T": 15.0,
+      "eta": 4.3502,
+      "P": 2.8846,
+      "phase": "frozen_solid",
+      "E": 0.0
+    },
+    {
+      "t_ms": 32200,
+      "T": 28.8289,
+      "eta": 2.8881,
+      "P": 3.3264,
+      "phase": "liquid",
+      "E": 2.3297
+    },
+    {
+      "t_ms": 32300,
+      "T": 30.0,
+      "eta": 2.7721,
+      "P": 3.4615,
+      "phase": "liquid",
+      "E": 3.892
+    },
+    {
+      "t_ms": 32400,
+      "T": 38.3659,
+      "eta": 0.8413,
+      "P": 3.9689,
+      "phase": "liquid",
+      "E": 6.5315
+    },
+    {
+      "t_ms": 32500,
+      "T": 9.7511,
+      "eta": 0.846,
+      "P": 1.0087,
+      "phase": "liquid",
+      "E": 8.7932
+    },
+    {
+      "t_ms": 32600,
+      "T": 9.6096,
+      "eta": 0.8855,
+      "P": 1.3255,
+      "phase": "liquid",
+      "E": 10.4633
+    },
+    {
+      "t_ms": 32700,
+      "T": 19.2193,
+      "eta": 0.8465,
+      "P": 1.9882,
+      "phase": "liquid",
+      "E": 11.9964
+    },
+    {
+      "t_ms": 32800,
+      "T": 18.3659,
+      "eta": 0.8478,
+      "P": 1.8999,
+      "phase": "liquid",
+      "E": 13.2694
+    },
+    {
+      "t_ms": 32900,
+      "T": 38.4386,
+      "eta": 0.7696,
+      "P": 11.5316,
+      "phase": "liquid",
+      "E": 15.8445
+    },
+    {
+      "t_ms": 33000,
+      "T": 11.2581,
+      "eta": 0.7822,
+      "P": 3.3774,
+      "phase": "liquid",
+      "E": 18.4342
+    },
+    {
+      "t_ms": 33100,
+      "T": 11.6096,
+      "eta": 1.1138,
+      "P": 4.6439,
+      "phase": "liquid",
+      "E": 20.3981
+    },
+    {
+      "t_ms": 33200,
+      "T": 46.4386,
+      "eta": 1.0434,
+      "P": 13.9316,
+      "phase": "liquid",
+      "E": 23.4968
+    },
+    {
+      "t_ms": 33300,
+      "T": 69.6578,
+      "eta": 0.97,
+      "P": 16.0749,
+      "phase": "gas",
+      "E": 28.9116
+    },
+    {
+      "t_ms": 33400,
+      "T": 56.1471,
+      "eta": 3.7267,
+      "P": 10.5276,
+      "phase": "liquid",
+      "E": 0.6862
+    },
+    {
+      "t_ms": 33500,
+      "T": 13.75,
+      "eta": 3.7107,
+      "P": 2.5781,
+      "phase": "liquid",
+      "E": 1.5139
+    },
+    {
+      "t_ms": 33600,
+      "T": 12.6082,
+      "eta": 3.8646,
+      "P": 3.1521,
+      "phase": "liquid",
+      "E": 2.0356
+    },
+    {
+      "t_ms": 33700,
+      "T": 19.2193,
+      "eta": 3.7163,
+      "P": 3.6036,
+      "phase": "liquid",
+      "E": 2.491
+    },
+    {
+      "t_ms": 33800,
+      "T": 18.3659,
+      "eta": 3.7102,
+      "P": 3.4436,
+      "phase": "liquid",
+      "E": 2.823
+    },
+    {
+      "t_ms": 33900,
+      "T": 46.4386,
+      "eta": 1.6514,
+      "P": 8.195,
+      "phase": "liquid",
+      "E": 1.363
+    },
+    {
+      "t_ms": 34000,
+      "T": 12.9248,
+      "eta": 1.6762,
+      "P": 2.2808,
+      "phase": "liquid",
+      "E": 3.494
+    },
+    {
+      "t_ms": 34100,
+      "T": 11.6096,
+      "eta": 1.7735,
+      "P": 2.7317,
+      "phase": "liquid",
+      "E": 5.4182
+    },
+    {
+      "t_ms": 34200,
+      "T": 23.2193,
+      "eta": 1.6793,
+      "P": 4.0975,
+      "phase": "liquid",
+      "E": 7.3002
+    },
+    {
+      "t_ms": 34300,
+      "T": 18.3659,
+      "eta": 1.6778,
+      "P": 3.241,
+      "phase": "liquid",
+      "E": 8.6978
+    },
+    {
+      "t_ms": 34400,
+      "T": 46.4386,
+      "eta": 2.5191,
+      "P": 4.9756,
+      "phase": "liquid",
+      "E": 11.2212
+    },
+    {
+      "t_ms": 34500,
+      "T": 12.9248,
+      "eta": 2.5109,
+      "P": 1.3848,
+      "phase": "liquid",
+      "E": 13.9308
+    },
+    {
+      "t_ms": 34600,
+      "T": 11.6096,
+      "eta": 2.6191,
+      "P": 1.6585,
+      "phase": "liquid",
+      "E": 16.0874
+    },
+    {
+      "t_ms": 34700,
+      "T": 19.2193,
+      "eta": 2.5169,
+      "P": 2.0592,
+      "phase": "liquid",
+      "E": 17.8237
+    },
+    {
+      "t_ms": 34800,
+      "T": 18.3659,
+      "eta": 2.5138,
+      "P": 1.9678,
+      "phase": "liquid",
+      "E": 19.2466
+    },
+    {
+      "t_ms": 34900,
+      "T": 58.0482,
+      "eta": 1.2588,
+      "P": 7.9157,
+      "phase": "liquid",
+      "E": 21.5692
+    },
+    {
+      "t_ms": 35000,
+      "T": 25.2164,
+      "eta": 1.3246,
+      "P": 3.7825,
+      "phase": "liquid",
+      "E": 24.5385
+    },
+    {
+      "t_ms": 35100,
+      "T": 22.5163,
+      "eta": 1.6031,
+      "P": 5.6291,
+      "phase": "liquid",
+      "E": 27.8172
+    },
+    {
+      "t_ms": 35200,
+      "T": 36.8474,
+      "eta": 1.3306,
+      "P": 6.1412,
+      "phase": "liquid",
+      "E": 29.9197
+    },
+    {
+      "t_ms": 35300,
+      "T": 43.7744,
+      "eta": 1.161,
+      "P": 7.7249,
+      "phase": "liquid",
+      "E": 32.5931
+    },
+    {
+      "t_ms": 35400,
+      "T": 68.75,
+      "eta": 1.3714,
+      "P": 10.1852,
+      "phase": "gas",
+      "E": 36.6336
+    },
+    {
+      "t_ms": 35500,
+      "T": 14.7385,
+      "eta": 1.74,
+      "P": 2.1835,
+      "phase": "liquid",
+      "E": 39.9745
+    },
+    {
+      "t_ms": 35600,
+      "T": 28.0735,
+      "eta": 2.8369,
+      "P": 6.2386,
+      "phase": "liquid",
+      "E": 43.0219
+    },
+    {
+      "t_ms": 35700,
+      "T": 42.1103,
+      "eta": 1.6725,
+      "P": 11.2294,
+      "phase": "liquid",
+      "E": 46.8068
+    },
+    {
+      "t_ms": 35800,
+      "T": 30.0,
+      "eta": 2.0729,
+      "P": 8.0,
+      "phase": "liquid",
+      "E": 48.6486
+    },
+    {
+      "t_ms": 35900,
+      "T": 33.7744,
+      "eta": 3.4304,
+      "P": 4.0529,
+      "phase": "liquid",
+      "E": 1.648
+    },
+    {
+      "t_ms": 36000,
+      "T": 0.0,
+      "eta": 3.4304,
+      "P": 0.0,
+      "phase": "liquid",
+      "E": 3.2027
+    },
+    {
+      "t_ms": 36100,
+      "T": 0.0,
+      "eta": 3.4304,
+      "P": 0.0,
+      "phase": "liquid",
+      "E": 3.2027
+    },
+    {
+      "t_ms": 36200,
+      "T": 7.9248,
+      "eta": 3.4304,
+      "P": 0.951,
+      "phase": "liquid",
+      "E": 3.7499
+    },
+    {
+      "t_ms": 36300,
+      "T": 0.0,
+      "eta": 0.1819,
+      "P": 0.0,
+      "phase": "liquid",
+      "E": 0.1056
+    },
+    {
+      "t_ms": 36400,
+      "T": 0.0,
+      "eta": 0.1819,
+      "P": 0.0,
+      "phase": "liquid",
+      "E": 0.1056
+    },
+    {
+      "t_ms": 36500,
+      "T": 78.807,
+      "eta": 5.4192,
+      "P": 15.7614,
+      "phase": "crystal",
+      "E": 2.2467
+    },
+    {
+      "t_ms": 36600,
+      "T": 50.0,
+      "eta": 5.377,
+      "P": 10.0,
+      "phase": "crystal",
+      "E": 10.3216
+    },
+    {
+      "t_ms": 36700,
+      "T": 73.6926,
+      "eta": 6.8788,
+      "P": 14.7385,
+      "phase": "crystal",
+      "E": 18.0629
+    },
+    {
+      "t_ms": 36800,
+      "T": 79.718,
+      "eta": 6.9412,
+      "P": 19.9295,
+      "phase": "crystal",
+      "E": 26.8001
+    },
+    {
+      "t_ms": 36900,
+      "T": 84.6784,
+      "eta": 6.9201,
+      "P": 21.1696,
+      "phase": "crystal",
+      "E": 33.8755
+    },
+    {
+      "t_ms": 37000,
+      "T": 78.807,
+      "eta": 6.8388,
+      "P": 14.5939,
+      "phase": "crystal",
+      "E": 41.0176
+    },
+    {
+      "t_ms": 37100,
+      "T": 33.0004,
+      "eta": 6.8645,
+      "P": 6.1112,
+      "phase": "frozen_solid",
+      "E": 46.6453
+    },
+    {
+      "t_ms": 37200,
+      "T": 33.7147,
+      "eta": 6.8939,
+      "P": 6.2435,
+      "phase": "frozen_solid",
+      "E": 50.4392
+    },
+    {
+      "t_ms": 37300,
+      "T": 41.2506,
+      "eta": 7.2758,
+      "P": 11.5502,
+      "phase": "crystal",
+      "E": 54.0467
+    },
+    {
+      "t_ms": 37400,
+      "T": 70.1086,
+      "eta": 7.2694,
+      "P": 19.6304,
+      "phase": "crystal",
+      "E": 58.6694
+    },
+    {
+      "t_ms": 37500,
+      "T": 114.2155,
+      "eta": 1.1918,
+      "P": 45.6862,
+      "phase": "gas",
+      "E": 66.9031
+    },
+    {
+      "t_ms": 37600,
+      "T": 49.0165,
+      "eta": 1.2209,
+      "P": 19.6066,
+      "phase": "liquid",
+      "E": 74.2041
+    },
+    {
+      "t_ms": 37700,
+      "T": 48.6835,
+      "eta": 1.1836,
+      "P": 19.4734,
+      "phase": "liquid",
+      "E": 79.5098
+    },
+    {
+      "t_ms": 37800,
+      "T": 47.5489,
+      "eta": 2.1044,
+      "P": 17.8308,
+      "phase": "liquid",
+      "E": 85.7768
+    },
+    {
+      "t_ms": 37900,
+      "T": 21.1048,
+      "eta": 2.4061,
+      "P": 8.6902,
+      "phase": "liquid",
+      "E": 89.2098
+    },
+    {
+      "t_ms": 38000,
+      "T": 54.3383,
+      "eta": 1.7701,
+      "P": 13.5846,
+      "phase": "liquid",
+      "E": 91.8345
+    },
+    {
+      "t_ms": 38100,
+      "T": 24.5007,
+      "eta": 1.7517,
+      "P": 6.1252,
+      "phase": "liquid",
+      "E": 94.8099
+    },
+    {
+      "t_ms": 38200,
+      "T": 36.2256,
+      "eta": 1.2114,
+      "P": 8.3597,
+      "phase": "liquid",
+      "E": 98.8363
+    },
+    {
+      "t_ms": 38300,
+      "T": 36.2256,
+      "eta": 1.6854,
+      "P": 10.3502,
+      "phase": "liquid",
+      "E": 105.257
+    },
+    {
+      "t_ms": 38400,
+      "T": 52.0426,
+      "eta": 1.931,
+      "P": 13.5763,
+      "phase": "liquid",
+      "E": 108.4818
+    },
+    {
+      "t_ms": 38500,
+      "T": 85.3308,
+      "eta": 4.9221,
+      "P": 26.2556,
+      "phase": "crystal",
+      "E": 1.5011
+    },
+    {
+      "t_ms": 38600,
+      "T": 31.022,
+      "eta": 4.8827,
+      "P": 9.5452,
+      "phase": "frozen_solid",
+      "E": 6.3192
+    },
+    {
+      "t_ms": 38700,
+      "T": 38.7775,
+      "eta": 4.917,
+      "P": 11.9315,
+      "phase": "frozen_solid",
+      "E": 9.889
+    },
+    {
+      "t_ms": 38800,
+      "T": 44.5168,
+      "eta": 4.7753,
+      "P": 16.6938,
+      "phase": "crystal",
+      "E": 15.5181
+    },
+    {
+      "t_ms": 38900,
+      "T": 17.614,
+      "eta": 4.7724,
+      "P": 6.6053,
+      "phase": "frozen_solid",
+      "E": 18.1981
+    },
+    {
+      "t_ms": 39000,
+      "T": 28.5841,
+      "eta": 4.7659,
+      "P": 7.6224,
+      "phase": "frozen_solid",
+      "E": 20.2086
+    },
+    {
+      "t_ms": 39100,
+      "T": 16.3338,
+      "eta": 4.7867,
+      "P": 4.3557,
+      "phase": "frozen_solid",
+      "E": 22.1803
+    },
+    {
+      "t_ms": 39200,
+      "T": 10.9874,
+      "eta": 4.8086,
+      "P": 2.93,
+      "phase": "frozen_solid",
+      "E": 23.4767
+    },
+    {
+      "t_ms": 39300,
+      "T": 20.4172,
+      "eta": 5.1254,
+      "P": 9.4233,
+      "phase": "frozen_solid",
+      "E": 25.293
+    },
+    {
+      "t_ms": 39400,
+      "T": 20.1303,
+      "eta": 5.1068,
+      "P": 9.2909,
+      "phase": "frozen_solid",
+      "E": 27.4321
+    },
+    {
+      "t_ms": 39500,
+      "T": 48.3007,
+      "eta": 3.0112,
+      "P": 10.7335,
+      "phase": "liquid",
+      "E": 28.1954
+    },
+    {
+      "t_ms": 39600,
+      "T": 16.3338,
+      "eta": 2.9978,
+      "P": 3.6297,
+      "phase": "liquid",
+      "E": 28.6948
+    },
+    {
+      "t_ms": 39700,
+      "T": 20.4172,
+      "eta": 2.9968,
+      "P": 4.5372,
+      "phase": "liquid",
+      "E": 29.0185
+    },
+    {
+      "t_ms": 39800,
+      "T": 31.2256,
+      "eta": 2.2666,
+      "P": 11.0208,
+      "phase": "liquid",
+      "E": 3.5435
+    },
+    {
+      "t_ms": 39900,
+      "T": 23.4498,
+      "eta": 2.2196,
+      "P": 9.1194,
+      "phase": "liquid",
+      "E": 6.1384
+    },
+    {
+      "t_ms": 40000,
+      "T": 66.4135,
+      "eta": 1.8206,
+      "P": 19.5334,
+      "phase": "gas",
+      "E": 10.8933
+    },
+    {
+      "t_ms": 40100,
+      "T": 78.3659,
+      "eta": 1.6592,
+      "P": 24.4893,
+      "phase": "gas",
+      "E": 17.96
+    },
+    {
+      "t_ms": 40200,
+      "T": 87.5489,
+      "eta": 1.4235,
+      "P": 26.9381,
+      "phase": "gas",
+      "E": 27.7863
+    },
+    {
+      "t_ms": 40300,
+      "T": 95.8496,
+      "eta": 1.8592,
+      "P": 36.5141,
+      "phase": "gas",
+      "E": 40.6266
+    },
+    {
+      "t_ms": 40400,
+      "T": 133.7744,
+      "eta": 2.039,
+      "P": 48.6453,
+      "phase": "gas",
+      "E": 51.9656
+    },
+    {
+      "t_ms": 40500,
+      "T": 134.4361,
+      "eta": 4.6607,
+      "P": 21.5098,
+      "phase": "crystal",
+      "E": 2.123
+    },
+    {
+      "t_ms": 40600,
+      "T": 51.6993,
+      "eta": 4.6224,
+      "P": 8.2719,
+      "phase": "crystal",
+      "E": 9.4626
+    },
+    {
+      "t_ms": 40700,
+      "T": 57.312,
+      "eta": 4.6553,
+      "P": 9.1699,
+      "phase": "crystal",
+      "E": 14.9442
+    },
+    {
+      "t_ms": 40800,
+      "T": 48.6835,
+      "eta": 4.5194,
+      "P": 10.4322,
+      "phase": "crystal",
+      "E": 20.8454
+    },
+    {
+      "t_ms": 40900,
+      "T": 17.614,
+      "eta": 4.521,
+      "P": 3.7744,
+      "phase": "frozen_solid",
+      "E": 23.1094
+    },
+    {
+      "t_ms": 41000,
+      "T": 28.5841,
+      "eta": 4.5215,
+      "P": 4.2347,
+      "phase": "frozen_solid",
+      "E": 25.0331
+    },
+    {
+      "t_ms": 41100,
+      "T": 16.3338,
+      "eta": 4.5413,
+      "P": 2.4198,
+      "phase": "frozen_solid",
+      "E": 27.169
+    },
+    {
+      "t_ms": 41200,
+      "T": 10.9874,
+      "eta": 4.5625,
+      "P": 1.6278,
+      "phase": "frozen_solid",
+      "E": 28.4672
+    },
+    {
+      "t_ms": 41300,
+      "T": 20.4172,
+      "eta": 4.8687,
+      "P": 4.9001,
+      "phase": "frozen_solid",
+      "E": 30.3707
+    },
+    {
+      "t_ms": 41400,
+      "T": 25.1629,
+      "eta": 4.8483,
+      "P": 6.0391,
+      "phase": "frozen_solid",
+      "E": 32.704
+    },
+    {
+      "t_ms": 41500,
+      "T": 137.5489,
+      "eta": 1.9874,
+      "P": 24.2733,
+      "phase": "gas",
+      "E": 38.1336
+    },
+    {
+      "t_ms": 41600,
+      "T": 130.0652,
+      "eta": 2.0771,
+      "P": 22.9527,
+      "phase": "gas",
+      "E": 56.2882
+    },
+    {
+      "t_ms": 41700,
+      "T": 120.8822,
+      "eta": 1.9642,
+      "P": 21.3322,
+      "phase": "gas",
+      "E": 73.317
+    },
+    {
+      "t_ms": 41800,
+      "T": 120.9925,
+      "eta": 1.2443,
+      "P": 35.1269,
+      "phase": "gas",
+      "E": 91.3292
+    },
+    {
+      "t_ms": 41900,
+      "T": 206.797,
+      "eta": 1.2981,
+      "P": 66.7087,
+      "phase": "gas",
+      "E": 113.0246
+    },
+    {
+      "t_ms": 42000,
+      "T": 243.8722,
+      "eta": 0.9715,
+      "P": 36.5808,
+      "phase": "gas",
+      "E": 131.5757
+    },
+    {
+      "t_ms": 42100,
+      "T": 123.3985,
+      "eta": 0.7345,
+      "P": 18.5098,
+      "phase": "gas",
+      "E": 144.9648
+    },
+    {
+      "t_ms": 42200,
+      "T": 114.2155,
+      "eta": 1.1037,
+      "P": 17.1323,
+      "phase": "gas",
+      "E": 155.4057
+    },
+    {
+      "t_ms": 42300,
+      "T": 120.9925,
+      "eta": 0.7982,
+      "P": 29.4306,
+      "phase": "gas",
+      "E": 167.7713
+    },
+    {
+      "t_ms": 42400,
+      "T": 210.0652,
+      "eta": 0.8692,
+      "P": 56.7744,
+      "phase": "gas",
+      "E": 192.4621
+    },
+    {
+      "t_ms": 42500,
+      "T": 226.6541,
+      "eta": 1.0296,
+      "P": 33.9981,
+      "phase": "gas",
+      "E": 213.463
+    },
+    {
+      "t_ms": 42600,
+      "T": 116.7318,
+      "eta": 0.987,
+      "P": 17.5098,
+      "phase": "gas",
+      "E": 232.0359
+    },
+    {
+      "t_ms": 42700,
+      "T": 98.3659,
+      "eta": 1.0206,
+      "P": 14.7549,
+      "phase": "gas",
+      "E": 248.9032
+    },
+    {
+      "t_ms": 42800,
+      "T": 90.0,
+      "eta": 1.0705,
+      "P": 21.8919,
+      "phase": "gas",
+      "E": 267.9157
+    },
+    {
+      "t_ms": 42900,
+      "T": 178.3659,
+      "eta": 1.5385,
+      "P": 48.207,
+      "phase": "gas",
+      "E": 283.401
+    },
+    {
+      "t_ms": 43000,
+      "T": 218.8722,
+      "eta": 1.815,
+      "P": 35.4928,
+      "phase": "gas",
+      "E": 295.7018
+    },
+    {
+      "t_ms": 43100,
+      "T": 110.0652,
+      "eta": 1.6874,
+      "P": 17.8484,
+      "phase": "gas",
+      "E": 313.1015
+    },
+    {
+      "t_ms": 43200,
+      "T": 111.4787,
+      "eta": 1.818,
+      "P": 18.0776,
+      "phase": "gas",
+      "E": 327.7151
+    },
+    {
+      "t_ms": 43300,
+      "T": 107.5489,
+      "eta": 2.427,
+      "P": 29.6687,
+      "phase": "gas",
+      "E": 343.9828
+    },
+    {
+      "t_ms": 43400,
+      "T": 128.4925,
+      "eta": 2.5612,
+      "P": 35.4462,
+      "phase": "gas",
+      "E": 352.2336
+    },
+    {
+      "t_ms": 43500,
+      "T": 123.8233,
+      "eta": 4.9375,
+      "P": 24.7647,
+      "phase": "crystal",
+      "E": 2.2845
+    },
+    {
+      "t_ms": 43600,
+      "T": 60.4411,
+      "eta": 4.7542,
+      "P": 12.0882,
+      "phase": "crystal",
+      "E": 11.0278
+    },
+    {
+      "t_ms": 43700,
+      "T": 55.8496,
+      "eta": 4.7893,
+      "P": 11.1699,
+      "phase": "crystal",
+      "E": 17.0263
+    },
+    {
+      "t_ms": 43800,
+      "T": 55.0326,
+      "eta": 4.8513,
+      "P": 16.5098,
+      "phase": "crystal",
+      "E": 23.5174
+    },
+    {
+      "t_ms": 43900,
+      "T": 42.1692,
+      "eta": 4.8533,
+      "P": 12.6508,
+      "phase": "crystal",
+      "E": 29.6125
+    },
+    {
+      "t_ms": 44000,
+      "T": 30.0,
+      "eta": 4.7881,
+      "P": 6.0,
+      "phase": "frozen_solid",
+      "E": 32.1418
+    },
+    {
+      "t_ms": 44100,
+      "T": 20.0,
+      "eta": 4.7108,
+      "P": 4.0,
+      "phase": "frozen_solid",
+      "E": 34.703
+    },
+    {
+      "t_ms": 44200,
+      "T": 27.2193,
+      "eta": 4.7901,
+      "P": 5.4439,
+      "phase": "frozen_solid",
+      "E": 37.3871
+    },
+    {
+      "t_ms": 44300,
+      "T": 36.9288,
+      "eta": 4.8504,
+      "P": 11.0786,
+      "phase": "frozen_solid",
+      "E": 41.4516
+    },
+    {
+      "t_ms": 44400,
+      "T": 78.75,
+      "eta": 4.8521,
+      "P": 23.625,
+      "phase": "crystal",
+      "E": 47.6816
+    },
+    {
+      "t_ms": 44500,
+      "T": 87.6302,
+      "eta": 6.9462,
+      "P": 17.526,
+      "phase": "crystal",
+      "E": 51.7211
+    },
+    {
+      "t_ms": 44600,
+      "T": 42.5163,
+      "eta": 6.8389,
+      "P": 8.5033,
+      "phase": "crystal",
+      "E": 55.7179
+    },
+    {
+      "t_ms": 44700,
+      "T": 58.8847,
+      "eta": 6.9016,
+      "P": 11.7769,
+      "phase": "crystal",
+      "E": 59.1049
+    },
+    {
+      "t_ms": 44800,
+      "T": 63.0514,
+      "eta": 8.6562,
+      "P": 15.2193,
+      "phase": "crystal",
+      "E": 66.5407
+    },
+    {
+      "t_ms": 44900,
+      "T": 61.345,
+      "eta": 8.6184,
+      "P": 14.8074,
+      "phase": "crystal",
+      "E": 71.7318
+    },
+    {
+      "t_ms": 45000,
+      "T": 57.7508,
+      "eta": 8.699,
+      "P": 10.6946,
+      "phase": "crystal",
+      "E": 75.2707
+    },
+    {
+      "t_ms": 45100,
+      "T": 33.0004,
+      "eta": 8.6659,
+      "P": 6.1112,
+      "phase": "frozen_solid",
+      "E": 78.5232
+    },
+    {
+      "t_ms": 45200,
+      "T": 41.9184,
+      "eta": 8.7012,
+      "P": 7.7627,
+      "phase": "crystal",
+      "E": 81.5181
+    },
+    {
+      "t_ms": 45300,
+      "T": 54.718,
+      "eta": 8.254,
+      "P": 15.3211,
+      "phase": "crystal",
+      "E": 88.948
+    },
+    {
+      "t_ms": 45400,
+      "T": 82.3526,
+      "eta": 8.2547,
+      "P": 23.0587,
+      "phase": "crystal",
+      "E": 95.4846
+    },
+    {
+      "t_ms": 45500,
+      "T": 77.8936,
+      "eta": 1.6132,
+      "P": 31.1574,
+      "phase": "gas",
+      "E": 101.8753
+    },
+    {
+      "t_ms": 45600,
+      "T": 24.1504,
+      "eta": 1.6219,
+      "P": 9.6601,
+      "phase": "liquid",
+      "E": 105.388
+    },
+    {
+      "t_ms": 45700,
+      "T": 30.188,
+      "eta": 1.6069,
+      "P": 12.0752,
+      "phase": "liquid",
+      "E": 108.027
+    },
+    {
+      "t_ms": 45800,
+      "T": 58.4202,
+      "eta": 2.2514,
+      "P": 21.9076,
+      "phase": "liquid",
+      "E": 114.216
+    },
+    {
+      "t_ms": 45900,
+      "T": 61.0551,
+      "eta": 2.4344,
+      "P": 25.1403,
+      "phase": "gas",
+      "E": 120.2221
+    },
+    {
+      "t_ms": 46000,
+      "T": 87.6302,
+      "eta": 1.6877,
+      "P": 21.9076,
+      "phase": "gas",
+      "E": 127.0325
+    },
+    {
+      "t_ms": 46100,
+      "T": 36.2256,
+      "eta": 1.7298,
+      "P": 9.0564,
+      "phase": "liquid",
+      "E": 132.4447
+    },
+    {
+      "t_ms": 46200,
+      "T": 36.2256,
+      "eta": 1.2456,
+      "P": 8.3597,
+      "phase": "liquid",
+      "E": 135.3961
+    },
+    {
+      "t_ms": 46300,
+      "T": 36.2256,
+      "eta": 1.9243,
+      "P": 10.3502,
+      "phase": "liquid",
+      "E": 138.7617
+    },
+    {
+      "t_ms": 46400,
+      "T": 52.0426,
+      "eta": 2.1194,
+      "P": 13.5763,
+      "phase": "liquid",
+      "E": 141.1949
+    },
+    {
+      "t_ms": 46500,
+      "T": 88.1617,
+      "eta": 4.2172,
+      "P": 27.1267,
+      "phase": "crystal",
+      "E": 1.9425
+    },
+    {
+      "t_ms": 46600,
+      "T": 35.6134,
+      "eta": 4.1384,
+      "P": 10.958,
+      "phase": "liquid",
+      "E": 8.1296
+    },
+    {
+      "t_ms": 46700,
+      "T": 44.5168,
+      "eta": 4.2168,
+      "P": 13.6975,
+      "phase": "liquid",
+      "E": 1.9205
+    },
+    {
+      "t_ms": 46800,
+      "T": 48.6835,
+      "eta": 4.0447,
+      "P": 17.1824,
+      "phase": "liquid",
+      "E": 3.7501
+    },
+    {
+      "t_ms": 46900,
+      "T": 17.614,
+      "eta": 4.0093,
+      "P": 6.2167,
+      "phase": "liquid",
+      "E": 7.2023
+    },
+    {
+      "t_ms": 47000,
+      "T": 28.5841,
+      "eta": 3.9952,
+      "P": 8.7951,
+      "phase": "liquid",
+      "E": 0.5433
+    },
+    {
+      "t_ms": 47100,
+      "T": 16.3338,
+      "eta": 3.9712,
+      "P": 5.0258,
+      "phase": "liquid",
+      "E": 2.7884
+    },
+    {
+      "t_ms": 47200,
+      "T": 10.9874,
+      "eta": 4.0464,
+      "P": 3.3807,
+      "phase": "liquid",
+      "E": 4.206
+    },
+    {
+      "t_ms": 47300,
+      "T": 20.4172,
+      "eta": 4.3951,
+      "P": 10.2086,
+      "phase": "frozen_solid",
+      "E": 2.3191
+    },
+    {
+      "t_ms": 47400,
+      "T": 20.1303,
+      "eta": 4.3972,
+      "P": 10.0652,
+      "phase": "frozen_solid",
+      "E": 4.7102
+    },
+    {
+      "t_ms": 47500,
+      "T": 52.0426,
+      "eta": 2.0848,
+      "P": 16.0131,
+      "phase": "liquid",
+      "E": 8.4889
+    },
+    {
+      "t_ms": 47600,
+      "T": 48.3007,
+      "eta": 1.9035,
+      "P": 7.1031,
+      "phase": "liquid",
+      "E": 16.699
+    },
+    {
+      "t_ms": 47700,
+      "T": 77.8936,
+      "eta": 1.3704,
+      "P": 23.9672,
+      "phase": "gas",
+      "E": 25.9573
+    },
+    {
+      "t_ms": 47800,
+      "T": 78.3659,
+      "eta": 2.3964,
+      "P": 25.0771,
+      "phase": "gas",
+      "E": 37.3593
+    },
+    {
+      "t_ms": 47900,
+      "T": 117.5489,
+      "eta": 2.0389,
+      "P": 42.745,
+      "phase": "gas",
+      "E": 51.4824
+    },
+    {
+      "t_ms": 48000,
+      "T": 110.0,
+      "eta": 2.3797,
+      "P": 28.9474,
+      "phase": "gas",
+      "E": 64.9847
+    },
+    {
+      "t_ms": 48100,
+      "T": 60.0,
+      "eta": 2.4162,
+      "P": 15.7895,
+      "phase": "liquid",
+      "E": 74.4353
+    },
+    {
+      "t_ms": 48200,
+      "T": 68.5702,
+      "eta": 2.3807,
+      "P": 18.0448,
+      "phase": "gas",
+      "E": 84.2142
+    },
+    {
+      "t_ms": 48300,
+      "T": 64.9386,
+      "eta": 1.2262,
+      "P": 27.3426,
+      "phase": "gas",
+      "E": 96.2645
+    },
+    {
+      "t_ms": 48400,
+      "T": 79.2481,
+      "eta": 1.1597,
+      "P": 33.3676,
+      "phase": "gas",
+      "E": 104.4365
+    },
+    {
+      "t_ms": 48500,
+      "T": 85.5022,
+      "eta": 1.1741,
+      "P": 26.3084,
+      "phase": "gas",
+      "E": 115.4156
+    },
+    {
+      "t_ms": 48600,
+      "T": 69.183,
+      "eta": 1.1969,
+      "P": 10.174,
+      "phase": "gas",
+      "E": 127.5847
+    },
+    {
+      "t_ms": 48700,
+      "T": 71.2269,
+      "eta": 0.8038,
+      "P": 21.916,
+      "phase": "gas",
+      "E": 138.4824
+    },
+    {
+      "t_ms": 48800,
+      "T": 78.3659,
+      "eta": 1.6882,
+      "P": 25.0771,
+      "phase": "gas",
+      "E": 149.68
+    },
+    {
+      "t_ms": 48900,
+      "T": 117.5489,
+      "eta": 1.3306,
+      "P": 42.745,
+      "phase": "gas",
+      "E": 163.8967
+    },
+    {
+      "t_ms": 49000,
+      "T": 110.0,
+      "eta": 1.6715,
+      "P": 28.9474,
+      "phase": "gas",
+      "E": 177.4905
+    },
+    {
+      "t_ms": 49100,
+      "T": 60.0,
+      "eta": 1.708,
+      "P": 15.7895,
+      "phase": "liquid",
+      "E": 187.0109
+    },
+    {
+      "t_ms": 49200,
+      "T": 68.5702,
+      "eta": 1.6725,
+      "P": 18.0448,
+      "phase": "gas",
+      "E": 196.856
+    },
+    {
+      "t_ms": 49300,
+      "T": 64.9386,
+      "eta": 1.2262,
+      "P": 27.3426,
+      "phase": "gas",
+      "E": 208.9202
+    },
+    {
+      "t_ms": 49400,
+      "T": 79.2481,
+      "eta": 1.1597,
+      "P": 33.3676,
+      "phase": "gas",
+      "E": 217.0922
+    },
+    {
+      "t_ms": 49500,
+      "T": 120.3797,
+      "eta": 3.6074,
+      "P": 37.0399,
+      "phase": "gas",
+      "E": 3.164
+    },
+    {
+      "t_ms": 49600,
+      "T": 96.7318,
+      "eta": 3.6569,
+      "P": 21.9845,
+      "phase": "gas",
+      "E": 8.8663
+    },
+    {
+      "t_ms": 49700,
+      "T": 98.033,
+      "eta": 3.7101,
+      "P": 27.2314,
+      "phase": "gas",
+      "E": 3.2201
+    },
+    {
+      "t_ms": 49800,
+      "T": 74.4035,
+      "eta": 6.8048,
+      "P": 37.2018,
+      "phase": "crystal",
+      "E": 7.5043
+    },
+    {
+      "t_ms": 49900,
+      "T": 105.9925,
+      "eta": 6.8096,
+      "P": 52.9962,
+      "phase": "crystal",
+      "E": 16.7226
+    },
+    {
+      "t_ms": 50000,
+      "T": 83.4925,
+      "eta": 6.4193,
+      "P": 26.0914,
+      "phase": "crystal",
+      "E": 25.6108
+    },
+    {
+      "t_ms": 50100,
+      "T": 47.5489,
+      "eta": 6.4088,
+      "P": 14.859,
+      "phase": "crystal",
+      "E": 31.6356
+    },
+    {
+      "t_ms": 50200,
+      "T": 47.5489,
+      "eta": 6.4242,
+      "P": 14.859,
+      "phase": "crystal",
+      "E": 37.4525
+    },
+    {
+      "t_ms": 50300,
+      "T": 74.4035,
+      "eta": 4.0393,
+      "P": 25.8795,
+      "phase": "gas",
+      "E": 44.3659
+    },
+    {
+      "t_ms": 50400,
+      "T": 159.8911,
+      "eta": 3.7096,
+      "P": 62.5661,
+      "phase": "gas",
+      "E": 58.1006
+    },
+    {
+      "t_ms": 50500,
+      "T": 130.8746,
+      "eta": 4.3854,
+      "P": 49.078,
+      "phase": "crystal",
+      "E": 4.3265
+    },
+    {
+      "t_ms": 50600,
+      "T": 52.3498,
+      "eta": 4.3854,
+      "P": 19.6312,
+      "phase": "crystal",
+      "E": 15.5754
+    },
+    {
+      "t_ms": 50700,
+      "T": 53.7744,
+      "eta": 4.2488,
+      "P": 20.1654,
+      "phase": "crystal",
+      "E": 21.9041
+    },
+    {
+      "t_ms": 50800,
+      "T": 53.7744,
+      "eta": 4.9439,
+      "P": 33.609,
+      "phase": "crystal",
+      "E": 30.926
+    },
+    {
+      "t_ms": 50900,
+      "T": 40.0,
+      "eta": 4.2559,
+      "P": 15.0,
+      "phase": "crystal",
+      "E": 35.8434
+    },
+    {
+      "t_ms": 51000,
+      "T": 0.0,
+      "eta": 0.0,
+      "P": 0.0,
+      "phase": "liquid",
+      "E": 35.8434
+    },
+    {
+      "t_ms": 51100,
+      "T": 0.0,
+      "eta": 0.0,
+      "P": 0.0,
+      "phase": "liquid",
+      "E": 35.8434
+    },
+    {
+      "t_ms": 51200,
+      "T": 0.0,
+      "eta": 0.0,
+      "P": 0.0,
+      "phase": "liquid",
+      "E": 35.8434
+    },
+    {
+      "t_ms": 51300,
+      "T": 0.0,
+      "eta": 0.0,
+      "P": 0.0,
+      "phase": "liquid",
+      "E": 35.8434
+    },
+    {
+      "t_ms": 51400,
+      "T": 0.0,
+      "eta": 0.0,
+      "P": 0.0,
+      "phase": "liquid",
+      "E": 35.8434
+    },
+    {
+      "t_ms": 51500,
+      "T": 37.5,
+      "eta": 7.7125,
+      "P": 5.1724,
+      "phase": "frozen_solid",
+      "E": 0.4406
+    },
+    {
+      "t_ms": 51600,
+      "T": 19.2193,
+      "eta": 7.7019,
+      "P": 2.6509,
+      "phase": "frozen_solid",
+      "E": 2.6736
+    },
+    {
+      "t_ms": 51700,
+      "T": 22.5163,
+      "eta": 7.7068,
+      "P": 3.1057,
+      "phase": "frozen_solid",
+      "E": 3.9561
+    },
+    {
+      "t_ms": 51800,
+      "T": 25.2164,
+      "eta": 7.8276,
+      "P": 4.3477,
+      "phase": "frozen_solid",
+      "E": 5.6517
+    },
+    {
+      "t_ms": 51900,
+      "T": 50.0,
+      "eta": 7.8154,
+      "P": 8.6207,
+      "phase": "crystal",
+      "E": 7.3319
+    },
+    {
+      "t_ms": 52000,
+      "T": 63.041,
+      "eta": 1.419,
+      "P": 18.9123,
+      "phase": "gas",
+      "E": 11.3181
+    },
+    {
+      "t_ms": 52100,
+      "T": 28.0735,
+      "eta": 1.4255,
+      "P": 8.4221,
+      "phase": "liquid",
+      "E": 17.9694
+    },
+    {
+      "t_ms": 52200,
+      "T": 25.2164,
+      "eta": 1.4788,
+      "P": 7.5649,
+      "phase": "liquid",
+      "E": 21.8045
+    },
+    {
+      "t_ms": 52300,
+      "T": 22.3593,
+      "eta": 1.4643,
+      "P": 8.9437,
+      "phase": "liquid",
+      "E": 25.6802
+    },
+    {
+      "t_ms": 52400,
+      "T": 37.5,
+      "eta": 1.524,
+      "P": 15.0,
+      "phase": "liquid",
+      "E": 29.4098
+    },
+    {
+      "t_ms": 52500,
+      "T": 55.8982,
+      "eta": 4.0196,
+      "P": 10.4809,
+      "phase": "liquid",
+      "E": 1.6564
+    },
+    {
+      "t_ms": 52600,
+      "T": 25.2164,
+      "eta": 4.0054,
+      "P": 4.7281,
+      "phase": "liquid",
+      "E": 6.2001
+    },
+    {
+      "t_ms": 52700,
+      "T": 22.3593,
+      "eta": 3.9969,
+      "P": 4.1924,
+      "phase": "liquid",
+      "E": 8.6689
+    },
+    {
+      "t_ms": 52800,
+      "T": 18.4237,
+      "eta": 4.1079,
+      "P": 4.6059,
+      "phase": "liquid",
+      "E": 11.2786
+    },
+    {
+      "t_ms": 52900,
+      "T": 30.0,
+      "eta": 4.0919,
+      "P": 7.5,
+      "phase": "liquid",
+      "E": 13.4767
+    },
+    {
+      "t_ms": 53000,
+      "T": 29.183,
+      "eta": 1.5381,
+      "P": 3.6479,
+      "phase": "liquid",
+      "E": 0.3597
+    },
+    {
+      "t_ms": 53100,
+      "T": 14.5915,
+      "eta": 2.1764,
+      "P": 2.7359,
+      "phase": "liquid",
+      "E": 1.169
+    },
+    {
+      "t_ms": 53200,
+      "T": 15.0,
+      "eta": 2.1785,
+      "P": 2.8125,
+      "phase": "liquid",
+      "E": 1.655
+    },
+    {
+      "t_ms": 53300,
+      "T": 20.6818,
+      "eta": 3.1669,
+      "P": 4.3541,
+      "phase": "liquid",
+      "E": 2.4131
+    },
+    {
+      "t_ms": 53400,
+      "T": 18.0482,
+      "eta": 2.5032,
+      "P": 3.7996,
+      "phase": "liquid",
+      "E": 3.4349
+    },
+    {
+      "t_ms": 53500,
+      "T": 50.0,
+      "eta": 1.4851,
+      "P": 8.8235,
+      "phase": "liquid",
+      "E": 4.7055
+    },
+    {
+      "t_ms": 53600,
+      "T": 24.0564,
+      "eta": 1.5119,
+      "P": 4.2452,
+      "phase": "liquid",
+      "E": 6.7491
+    },
+    {
+      "t_ms": 53700,
+      "T": 42.5617,
+      "eta": 1.5085,
+      "P": 7.5109,
+      "phase": "liquid",
+      "E": 9.0663
+    },
+    {
+      "t_ms": 53800,
+      "T": 48.3876,
+      "eta": 1.3755,
+      "P": 9.2167,
+      "phase": "liquid",
+      "E": 13.5481
+    },
+    {
+      "t_ms": 53900,
+      "T": 44.812,
+      "eta": 1.1093,
+      "P": 8.5356,
+      "phase": "liquid",
+      "E": 17.6073
+    },
+    {
+      "t_ms": 54000,
+      "T": 57.0259,
+      "eta": 2.2951,
+      "P": 6.1099,
+      "phase": "liquid",
+      "E": 19.9335
+    },
+    {
+      "t_ms": 54100,
+      "T": 24.1938,
+      "eta": 2.2853,
+      "P": 2.5922,
+      "phase": "liquid",
+      "E": 20.9433
+    },
+    {
+      "t_ms": 54200,
+      "T": 36.8474,
+      "eta": 2.2923,
+      "P": 3.9479,
+      "phase": "liquid",
+      "E": 22.2909
+    },
+    {
+      "t_ms": 54300,
+      "T": 43.9432,
+      "eta": 0.717,
+      "P": 9.7652,
+      "phase": "liquid",
+      "E": 27.5053
+    },
+    {
+      "t_ms": 54400,
+      "T": 56.2907,
+      "eta": 0.7485,
+      "P": 12.5091,
+      "phase": "liquid",
+      "E": 31.9887
+    },
+    {
+      "t_ms": 54500,
+      "T": 60.4845,
+      "eta": 3.551,
+      "P": 13.958,
+      "phase": "gas",
+      "E": 1.191
+    },
+    {
+      "t_ms": 54600,
+      "T": 26.416,
+      "eta": 3.5546,
+      "P": 6.096,
+      "phase": "liquid",
+      "E": 4.9745
+    },
+    {
+      "t_ms": 54700,
+      "T": 25.2164,
+      "eta": 3.595,
+      "P": 5.8192,
+      "phase": "liquid",
+      "E": 7.1526
+    },
+    {
+      "t_ms": 54800,
+      "T": 25.2164,
+      "eta": 4.5387,
+      "P": 7.7589,
+      "phase": "frozen_solid",
+      "E": 0.0
+    },
+    {
+      "t_ms": 54900,
+      "T": 40.0,
+      "eta": 3.6783,
+      "P": 12.3077,
+      "phase": "liquid",
+      "E": 2.438
+    },
+    {
+      "t_ms": 55000,
+      "T": 35.8496,
+      "eta": 3.1889,
+      "P": 4.302,
+      "phase": "liquid",
+      "E": 1.0342
+    },
+    {
+      "t_ms": 55100,
+      "T": 17.9248,
+      "eta": 3.2547,
+      "P": 2.151,
+      "phase": "liquid",
+      "E": 3.3436
+    },
+    {
+      "t_ms": 55200,
+      "T": 18.7744,
+      "eta": 3.2527,
+      "P": 2.2529,
+      "phase": "liquid",
+      "E": 4.6899
+    },
+    {
+      "t_ms": 55300,
+      "T": 17.2325,
+      "eta": 3.2342,
+      "P": 2.6512,
+      "phase": "liquid",
+      "E": 1.5657
+    },
+    {
+      "t_ms": 55400,
+      "T": 18.0482,
+      "eta": 2.4747,
+      "P": 2.7766,
+      "phase": "liquid",
+      "E": 3.2154
+    },
+    {
+      "t_ms": 55500,
+      "T": 32.4699,
+      "eta": 1.3645,
+      "P": 3.359,
+      "phase": "liquid",
+      "E": 1.407
+    },
+    {
+      "t_ms": 55600,
+      "T": 12.9879,
+      "eta": 1.3589,
+      "P": 1.3436,
+      "phase": "liquid",
+      "E": 5.53
+    },
+    {
+      "t_ms": 55700,
+      "T": 11.4883,
+      "eta": 1.3945,
+      "P": 1.1884,
+      "phase": "liquid",
+      "E": 7.6153
+    },
+    {
+      "t_ms": 55800,
+      "T": 11.4883,
+      "eta": 1.7123,
+      "P": 1.5846,
+      "phase": "liquid",
+      "E": 10.0468
+    },
+    {
+      "t_ms": 55900,
+      "T": 0.0,
+      "eta": 1.4222,
+      "P": 0.0,
+      "phase": "liquid",
+      "E": 11.7723
+    },
+    {
+      "t_ms": 56000,
+      "T": 28.7209,
+      "eta": 1.3945,
+      "P": 8.6163,
+      "phase": "liquid",
+      "E": 12.2697
+    },
+    {
+      "t_ms": 56100,
+      "T": 16.645,
+      "eta": 1.4029,
+      "P": 4.9935,
+      "phase": "liquid",
+      "E": 14.4056
+    },
+    {
+      "t_ms": 56200,
+      "T": 16.645,
+      "eta": 1.4512,
+      "P": 4.9935,
+      "phase": "liquid",
+      "E": 16.0945
+    },
+    {
+      "t_ms": 56300,
+      "T": 31.9213,
+      "eta": 1.4825,
+      "P": 12.7685,
+      "phase": "liquid",
+      "E": 19.0188
+    },
+    {
+      "t_ms": 56400,
+      "T": 67.2675,
+      "eta": 1.2309,
+      "P": 25.8721,
+      "phase": "gas",
+      "E": 23.3094
+    },
+    {
+      "t_ms": 56500,
+      "T": 81.7644,
+      "eta": 4.0519,
+      "P": 15.3308,
+      "phase": "gas",
+      "E": 2.3705
+    },
+    {
+      "t_ms": 56600,
+      "T": 29.477,
+      "eta": 4.0378,
+      "P": 5.5269,
+      "phase": "liquid",
+      "E": 7.6751
+    },
+    {
+      "t_ms": 56700,
+      "T": 27.2548,
+      "eta": 4.0294,
+      "P": 5.1103,
+      "phase": "liquid",
+      "E": 10.5725
+    },
+    {
+      "t_ms": 56800,
+      "T": 21.5564,
+      "eta": 4.1402,
+      "P": 5.3891,
+      "phase": "liquid",
+      "E": 13.764
+    },
+    {
+      "t_ms": 56900,
+      "T": 37.5,
+      "eta": 4.1245,
+      "P": 9.375,
+      "phase": "liquid",
+      "E": 16.0642
+    },
+    {
+      "t_ms": 57000,
+      "T": 53.2021,
+      "eta": 2.6683,
+      "P": 9.3886,
+      "phase": "liquid",
+      "E": 0.9412
+    },
+    {
+      "t_ms": 57100,
+      "T": 25.2164,
+      "eta": 2.6656,
+      "P": 4.45,
+      "phase": "liquid",
+      "E": 4.6209
+    },
+    {
+      "t_ms": 57200,
+      "T": 21.2809,
+      "eta": 2.6831,
+      "P": 3.7554,
+      "phase": "liquid",
+      "E": 6.7808
+    },
+    {
+      "t_ms": 57300,
+      "T": 21.2809,
+      "eta": 2.7199,
+      "P": 5.0073,
+      "phase": "liquid",
+      "E": 8.65
+    },
+    {
+      "t_ms": 57400,
+      "T": 37.5,
+      "eta": 2.7499,
+      "P": 8.8235,
+      "phase": "liquid",
+      "E": 11.2176
+    },
+    {
+      "t_ms": 57500,
+      "T": 63.041,
+      "eta": 2.9206,
+      "P": 6.7544,
+      "phase": "gas",
+      "E": 1.388
+    },
+    {
+      "t_ms": 57600,
+      "T": 28.0735,
+      "eta": 2.9121,
+      "P": 3.0079,
+      "phase": "liquid",
+      "E": 6.3571
+    },
+    {
+      "t_ms": 57700,
+      "T": 25.2164,
+      "eta": 2.9527,
+      "P": 2.7018,
+      "phase": "liquid",
+      "E": 8.9306
+    },
+    {
+      "t_ms": 57800,
+      "T": 22.3593,
+      "eta": 2.9867,
+      "P": 3.1942,
+      "phase": "liquid",
+      "E": 11.2538
+    },
+    {
+      "t_ms": 57900,
+      "T": 37.5,
+      "eta": 3.023,
+      "P": 5.3571,
+      "phase": "liquid",
+      "E": 14.1633
+    },
+    {
+      "t_ms": 58000,
+      "T": 63.8426,
+      "eta": 0.8938,
+      "P": 8.3273,
+      "phase": "gas",
+      "E": 17.8641
+    },
+    {
+      "t_ms": 58100,
+      "T": 55.0,
+      "eta": 0.8102,
+      "P": 7.5,
+      "phase": "liquid",
+      "E": 24.2118
+    },
+    {
+      "t_ms": 58200,
+      "T": 52.8321,
+      "eta": 1.1186,
+      "P": 7.9248,
+      "phase": "liquid",
+      "E": 27.8898
+    },
+    {
+      "t_ms": 58300,
+      "T": 43.2193,
+      "eta": 1.362,
+      "P": 10.8048,
+      "phase": "liquid",
+      "E": 30.2803
+    },
+    {
+      "t_ms": 58400,
+      "T": 70.0,
+      "eta": 1.1413,
+      "P": 19.4444,
+      "phase": "gas",
+      "E": 36.2142
+    },
+    {
+      "t_ms": 58500,
+      "T": 85.7789,
+      "eta": 1.5654,
+      "P": 12.708,
+      "phase": "gas",
+      "E": 42.4059
+    },
+    {
+      "t_ms": 58600,
+      "T": 27.3216,
+      "eta": 1.975,
+      "P": 4.0476,
+      "phase": "liquid",
+      "E": 46.9622
+    },
+    {
+      "t_ms": 58700,
+      "T": 42.6966,
+      "eta": 1.9988,
+      "P": 6.3254,
+      "phase": "liquid",
+      "E": 50.4153
+    },
+    {
+      "t_ms": 58800,
+      "T": 42.6966,
+      "eta": 2.2829,
+      "P": 14.2322,
+      "phase": "liquid",
+      "E": 55.6884
+    },
+    {
+      "t_ms": 58900,
+      "T": 34.2738,
+      "eta": 2.3056,
+      "P": 11.4246,
+      "phase": "liquid",
+      "E": 58.9496
+    },
+    {
+      "t_ms": 59000,
+      "T": 60.141,
+      "eta": 2.9317,
+      "P": 7.2169,
+      "phase": "liquid",
+      "E": 1.6003
+    },
+    {
+      "t_ms": 59100,
+      "T": 27.5,
+      "eta": 2.8977,
+      "P": 3.3,
+      "phase": "liquid",
+      "E": 6.0773
+    },
+    {
+      "t_ms": 59200,
+      "T": 25.2164,
+      "eta": 2.0108,
+      "P": 2.0173,
+      "phase": "liquid",
+      "E": 8.2796
+    },
+    {
+      "t_ms": 59300,
+      "T": 28.0735,
+      "eta": 1.8975,
+      "P": 1.7546,
+      "phase": "liquid",
+      "E": 10.647
+    },
+    {
+      "t_ms": 59400,
+      "T": 45.0,
+      "eta": 1.9021,
+      "P": 2.4324,
+      "phase": "liquid",
+      "E": 13.5018
+    },
+    {
+      "t_ms": 59500,
+      "T": 87.5,
+      "eta": 6.4944,
+      "P": 12.069,
+      "phase": "crystal",
+      "E": 0.6847
+    },
+    {
+      "t_ms": 59600,
+      "T": 50.0652,
+      "eta": 6.6127,
+      "P": 8.6319,
+      "phase": "crystal",
+      "E": 3.9228
+    },
+    {
+      "t_ms": 59700,
+      "T": 54.4386,
+      "eta": 6.5967,
+      "P": 9.386,
+      "phase": "crystal",
+      "E": 7.1921
+    },
+    {
+      "t_ms": 59800,
+      "T": 56.907,
+      "eta": 7.2387,
+      "P": 13.7362,
+      "phase": "crystal",
+      "E": 10.2237
+    },
+    {
+      "t_ms": 59900,
+      "T": 90.0,
+      "eta": 6.7738,
+      "P": 21.7241,
+      "phase": "crystal",
+      "E": 14.775
+    },
+    {
+      "t_ms": 60000,
+      "T": 103.3985,
+      "eta": 2.4519,
+      "P": 18.7997,
+      "phase": "gas",
+      "E": 21.3027
+    },
+    {
+      "t_ms": 60100,
+      "T": 57.1078,
+      "eta": 2.5759,
+      "P": 12.979,
+      "phase": "liquid",
+      "E": 33.7123
+    },
+    {
+      "t_ms": 60200,
+      "T": 51.6993,
+      "eta": 2.6979,
+      "P": 11.7498,
+      "phase": "liquid",
+      "E": 40.8528
+    },
+    {
+      "t_ms": 60300,
+      "T": 55.0326,
+      "eta": 2.9313,
+      "P": 17.5104,
+      "phase": "liquid",
+      "E": 49.5561
+    },
+    {
+      "t_ms": 60400,
+      "T": 86.2256,
+      "eta": 2.9046,
+      "P": 27.4354,
+      "phase": "gas",
+      "E": 58.1761
+    },
+    {
+      "t_ms": 60500,
+      "T": 85.0326,
+      "eta": 6.8173,
+      "P": 12.1475,
+      "phase": "crystal",
+      "E": 0.4365
+    },
+    {
+      "t_ms": 60600,
+      "T": 50.4411,
+      "eta": 6.9573,
+      "P": 9.0073,
+      "phase": "crystal",
+      "E": 2.4889
+    },
+    {
+      "t_ms": 60700,
+      "T": 37.9248,
+      "eta": 6.9416,
+      "P": 6.7723,
+      "phase": "frozen_solid",
+      "E": 4.2798
+    },
+    {
+      "t_ms": 60800,
+      "T": 35.6832,
+      "eta": 7.5484,
+      "P": 8.9208,
+      "phase": "frozen_solid",
+      "E": 6.0137
+    },
+    {
+      "t_ms": 60900,
+      "T": 54.6447,
+      "eta": 7.0697,
+      "P": 13.6612,
+      "phase": "crystal",
+      "E": 8.2809
+    },
+    {
+      "t_ms": 61000,
+      "T": 63.8074,
+      "eta": 5.4331,
+      "P": 7.7342,
+      "phase": "crystal",
+      "E": 11.126
+    },
+    {
+      "t_ms": 61100,
+      "T": 47.3705,
+      "eta": 5.3568,
+      "P": 5.7419,
+      "phase": "crystal",
+      "E": 16.1101
+    },
+    {
+      "t_ms": 61200,
+      "T": 57.4974,
+      "eta": 5.3693,
+      "P": 6.9694,
+      "phase": "crystal",
+      "E": 22.157
+    },
+    {
+      "t_ms": 61300,
+      "T": 64.6241,
+      "eta": 3.1025,
+      "P": 12.5079,
+      "phase": "gas",
+      "E": 32.5655
+    },
+    {
+      "t_ms": 61400,
+      "T": 100.1303,
+      "eta": 3.1404,
+      "P": 19.3801,
+      "phase": "gas",
+      "E": 43.2793
+    },
+    {
+      "t_ms": 61500,
+      "T": 120.8822,
+      "eta": 3.1494,
+      "P": 16.6734,
+      "phase": "gas",
+      "E": 1.7004
+    },
+    {
+      "t_ms": 61600,
+      "T": 61.6993,
+      "eta": 3.1382,
+      "P": 8.5102,
+      "phase": "gas",
+      "E": 5.7386
+    },
+    {
+      "t_ms": 61700,
+      "T": 82.5489,
+      "eta": 3.1268,
+      "P": 11.3861,
+      "phase": "gas",
+      "E": 9.7144
+    },
+    {
+      "t_ms": 61800,
+      "T": 87.5489,
+      "eta": 1.9511,
+      "P": 15.918,
+      "phase": "gas",
+      "E": 8.6168
+    },
+    {
+      "t_ms": 61900,
+      "T": 116.8771,
+      "eta": 1.9816,
+      "P": 21.2504,
+      "phase": "gas",
+      "E": 17.1128
+    },
+    {
+      "t_ms": 62000,
+      "T": 130.0652,
+      "eta": 4.1008,
+      "P": 13.0065,
+      "phase": "gas",
+      "E": 3.1237
+    },
+    {
+      "t_ms": 62100,
+      "T": 61.6993,
+      "eta": 4.4551,
+      "P": 9.2549,
+      "phase": "crystal",
+      "E": 4.0824
+    },
+    {
+      "t_ms": 62200,
+      "T": 82.5489,
+      "eta": 4.4586,
+      "P": 12.3823,
+      "phase": "crystal",
+      "E": 11.5878
+    },
+    {
+      "t_ms": 62300,
+      "T": 78.7744,
+      "eta": 3.0576,
+      "P": 11.2535,
+      "phase": "gas",
+      "E": 19.6712
+    },
+    {
+      "t_ms": 62400,
+      "T": 97.8576,
+      "eta": 3.2589,
+      "P": 20.9695,
+      "phase": "gas",
+      "E": 27.2526
+    },
+    {
+      "t_ms": 62500,
+      "T": 120.8822,
+      "eta": 1.7186,
+      "P": 9.8013,
+      "phase": "gas",
+      "E": 2.0399
+    },
+    {
+      "t_ms": 62600,
+      "T": 60.4411,
+      "eta": 1.6253,
+      "P": 5.4946,
+      "phase": "liquid",
+      "E": 7.5085
+    },
+    {
+      "t_ms": 62700,
+      "T": 57.1078,
+      "eta": 1.2033,
+      "P": 19.0359,
+      "phase": "liquid",
+      "E": 11.9216
+    },
+    {
+      "t_ms": 62800,
+      "T": 60.4411,
+      "eta": 1.714,
+      "P": 11.5126,
+      "phase": "liquid",
+      "E": 17.4341
+    },
+    {
+      "t_ms": 62900,
+      "T": 64.6692,
+      "eta": 1.9373,
+      "P": 14.3709,
+      "phase": "gas",
+      "E": 22.0259
+    },
+    {
+      "t_ms": 63000,
+      "T": 61.161,
+      "eta": 2.2636,
+      "P": 14.1141,
+      "phase": "gas",
+      "E": 25.5485
+    },
+    {
+      "t_ms": 63100,
+      "T": 24.1938,
+      "eta": 2.2722,
+      "P": 5.5832,
+      "phase": "liquid",
+      "E": 28.3214
+    },
+    {
+      "t_ms": 63200,
+      "T": 32.3346,
+      "eta": 2.3177,
+      "P": 7.4618,
+      "phase": "liquid",
+      "E": 30.6791
+    },
+    {
+      "t_ms": 63300,
+      "T": 33.75,
+      "eta": 1.2018,
+      "P": 9.6429,
+      "phase": "liquid",
+      "E": 34.1929
+    },
+    {
+      "t_ms": 63400,
+      "T": 48.0482,
+      "eta": 1.2901,
+      "P": 13.7281,
+      "phase": "liquid",
+      "E": 36.226
+    },
+    {
+      "t_ms": 63500,
+      "T": 67.5,
+      "eta": 0.3574,
+      "P": 4.939,
+      "phase": "gas",
+      "E": 40.4007
+    },
+    {
+      "t_ms": 63600,
+      "T": 50.0652,
+      "eta": 0.5058,
+      "P": 4.2913,
+      "phase": "liquid",
+      "E": 46.6563
+    },
+    {
+      "t_ms": 63700,
+      "T": 48.3876,
+      "eta": 0.2915,
+      "P": 12.0969,
+      "phase": "liquid",
+      "E": 51.1929
+    },
+    {
+      "t_ms": 63800,
+      "T": 48.9288,
+      "eta": 0.5352,
+      "P": 8.5094,
+      "phase": "liquid",
+      "E": 58.0706
+    },
+    {
+      "t_ms": 63900,
+      "T": 61.25,
+      "eta": 0.7841,
+      "P": 12.25,
+      "phase": "gas",
+      "E": 62.7025
+    },
+    {
+      "t_ms": 64000,
+      "T": 59.1524,
+      "eta": 1.3395,
+      "P": 17.7457,
+      "phase": "liquid",
+      "E": 66.7539
+    },
+    {
+      "t_ms": 64100,
+      "T": 23.2193,
+      "eta": 1.3456,
+      "P": 6.9658,
+      "phase": "liquid",
+      "E": 71.677
+    },
+    {
+      "t_ms": 64200,
+      "T": 21.1328,
+      "eta": 1.3998,
+      "P": 6.3399,
+      "phase": "liquid",
+      "E": 74.6646
+    },
+    {
+      "t_ms": 64300,
+      "T": 32.3346,
+      "eta": 1.3707,
+      "P": 12.9338,
+      "phase": "liquid",
+      "E": 78.5887
+    },
+    {
+      "t_ms": 64400,
+      "T": 67.2675,
+      "eta": 1.3539,
+      "P": 25.8721,
+      "phase": "gas",
+      "E": 84.8935
+    },
+    {
+      "t_ms": 64500,
+      "T": 72.5815,
+      "eta": 2.3547,
+      "P": 13.609,
+      "phase": "gas",
+      "E": 1.7166
+    },
+    {
+      "t_ms": 64600,
+      "T": 25.0326,
+      "eta": 2.3381,
+      "P": 4.6936,
+      "phase": "liquid",
+      "E": 5.3711
+    },
+    {
+      "t_ms": 64700,
+      "T": 24.1938,
+      "eta": 2.3302,
+      "P": 4.5363,
+      "phase": "liquid",
+      "E": 7.3126
+    },
+    {
+      "t_ms": 64800,
+      "T": 25.0,
+      "eta": 2.4531,
+      "P": 6.25,
+      "phase": "liquid",
+      "E": 10.0463
+    },
+    {
+      "t_ms": 64900,
+      "T": 37.5,
+      "eta": 2.4367,
+      "P": 9.375,
+      "phase": "liquid",
+      "E": 11.9732
+    },
+    {
+      "t_ms": 65000,
+      "T": 53.2021,
+      "eta": 2.4933,
+      "P": 9.3886,
+      "phase": "liquid",
+      "E": 1.2179
+    },
+    {
+      "t_ms": 65100,
+      "T": 21.2809,
+      "eta": 2.4892,
+      "P": 3.7554,
+      "phase": "liquid",
+      "E": 5.3105
+    },
+    {
+      "t_ms": 65200,
+      "T": 16.645,
+      "eta": 2.5113,
+      "P": 2.9373,
+      "phase": "liquid",
+      "E": 7.4502
+    },
+    {
+      "t_ms": 65300,
+      "T": 11.4883,
+      "eta": 3.1798,
+      "P": 2.7031,
+      "phase": "liquid",
+      "E": 8.7709
+    },
+    {
+      "t_ms": 65400,
+      "T": 0.0,
+      "eta": 2.5804,
+      "P": 0.0,
+      "phase": "liquid",
+      "E": 9.8368
+    },
+    {
+      "t_ms": 65500,
+      "T": 41.6124,
+      "eta": 2.7549,
+      "P": 4.4585,
+      "phase": "liquid",
+      "E": 1.0077
+    },
+    {
+      "t_ms": 65600,
+      "T": 21.2809,
+      "eta": 2.7469,
+      "P": 2.2801,
+      "phase": "liquid",
+      "E": 4.8227
+    },
+    {
+      "t_ms": 65700,
+      "T": 21.2809,
+      "eta": 2.7949,
+      "P": 2.2801,
+      "phase": "liquid",
+      "E": 7.1986
+    },
+    {
+      "t_ms": 65800,
+      "T": 21.2809,
+      "eta": 3.5317,
+      "P": 3.0401,
+      "phase": "liquid",
+      "E": 9.6506
+    },
+    {
+      "t_ms": 65900,
+      "T": 24.3383,
+      "eta": 2.868,
+      "P": 3.4769,
+      "phase": "liquid",
+      "E": 12.2633
+    },
+    {
+      "t_ms": 66000,
+      "T": 42.4511,
+      "eta": 1.0454,
+      "P": 4.8516,
+      "phase": "liquid",
+      "E": 1.2686
+    },
+    {
+      "t_ms": 66100,
+      "T": 53.1285,
+      "eta": 0.8922,
+      "P": 6.2504,
+      "phase": "liquid",
+      "E": 8.2945
+    },
+    {
+      "t_ms": 66200,
+      "T": 80.2368,
+      "eta": 1.428,
+      "P": 10.0296,
+      "phase": "gas",
+      "E": 15.3948
+    },
+    {
+      "t_ms": 66300,
+      "T": 80.2368,
+      "eta": 2.9588,
+      "P": 17.5518,
+      "phase": "gas",
+      "E": 20.0875
+    },
+    {
+      "t_ms": 66400,
+      "T": 95.6617,
+      "eta": 2.6719,
+      "P": 22.3211,
+      "phase": "gas",
+      "E": 24.2354
+    },
+    {
+      "t_ms": 66500,
+      "T": 79.9456,
+      "eta": 3.7726,
+      "P": 9.5935,
+      "phase": "gas",
+      "E": 0.926
+    },
+    {
+      "t_ms": 66600,
+      "T": 22.8416,
+      "eta": 3.4763,
+      "P": 3.8069,
+      "phase": "liquid",
+      "E": 0.9089
+    },
+    {
+      "t_ms": 66700,
+      "T": 20.4037,
+      "eta": 3.4652,
+      "P": 3.4006,
+      "phase": "liquid",
+      "E": 2.0904
+    },
+    {
+      "t_ms": 66800,
+      "T": 16.5774,
+      "eta": 3.6068,
+      "P": 3.6839,
+      "phase": "liquid",
+      "E": 3.2017
+    },
+    {
+      "t_ms": 66900,
+      "T": 0.0,
+      "eta": 3.6069,
+      "P": 0.0,
+      "phase": "liquid",
+      "E": 3.8935
+    },
+    {
+      "t_ms": 67000,
+      "T": 0.0,
+      "eta": 3.4585,
+      "P": 0.0,
+      "phase": "liquid",
+      "E": 3.8935
+    },
+    {
+      "t_ms": 67100,
+      "T": 0.0,
+      "eta": 3.463,
+      "P": 0.0,
+      "phase": "liquid",
+      "E": 3.8935
+    },
+    {
+      "t_ms": 67200,
+      "T": 0.0,
+      "eta": 3.4602,
+      "P": 0.0,
+      "phase": "liquid",
+      "E": 3.8935
+    },
+    {
+      "t_ms": 67300,
+      "T": 9.7503,
+      "eta": 0.5972,
+      "P": 1.17,
+      "phase": "liquid",
+      "E": 4.1828
+    },
+    {
+      "t_ms": 67400,
+      "T": 25.2675,
+      "eta": 0.7744,
+      "P": 3.8873,
+      "phase": "liquid",
+      "E": 4.7688
+    },
+    {
+      "t_ms": 67500,
+      "T": 97.2434,
+      "eta": 1.146,
+      "P": 9.9737,
+      "phase": "gas",
+      "E": 9.6737
+    },
+    {
+      "t_ms": 67600,
+      "T": 68.5248,
+      "eta": 1.1528,
+      "P": 7.0282,
+      "phase": "gas",
+      "E": 18.2773
+    },
+    {
+      "t_ms": 67700,
+      "T": 74.4035,
+      "eta": 1.1163,
+      "P": 7.6311,
+      "phase": "gas",
+      "E": 25.3748
+    },
+    {
+      "t_ms": 67800,
+      "T": 73.0004,
+      "eta": 1.6576,
+      "P": 15.7839,
+      "phase": "gas",
+      "E": 30.2182
+    },
+    {
+      "t_ms": 67900,
+      "T": 93.2751,
+      "eta": 1.4699,
+      "P": 21.32,
+      "phase": "gas",
+      "E": 33.0779
+    },
+    {
+      "t_ms": 68000,
+      "T": 109.5007,
+      "eta": 0.9207,
+      "P": 13.6876,
+      "phase": "gas",
+      "E": 38.6779
+    },
+    {
+      "t_ms": 68100,
+      "T": 73.0004,
+      "eta": 0.846,
+      "P": 9.7334,
+      "phase": "gas",
+      "E": 45.8566
+    },
+    {
+      "t_ms": 68200,
+      "T": 73.0004,
+      "eta": 0.5051,
+      "P": 10.069,
+      "phase": "gas",
+      "E": 56.0501
+    },
+    {
+      "t_ms": 68300,
+      "T": 85.0326,
+      "eta": 1.7193,
+      "P": 19.436,
+      "phase": "gas",
+      "E": 67.8828
+    },
+    {
+      "t_ms": 68400,
+      "T": 131.7932,
+      "eta": 1.1155,
+      "P": 28.8298,
+      "phase": "gas",
+      "E": 74.8455
+    },
+    {
+      "t_ms": 68500,
+      "T": 105.0326,
+      "eta": 1.1506,
+      "P": 16.8052,
+      "phase": "gas",
+      "E": 82.2983
+    },
+    {
+      "t_ms": 68600,
+      "T": 99.9386,
+      "eta": 0.5197,
+      "P": 14.9908,
+      "phase": "gas",
+      "E": 90.0597
+    },
+    {
+      "t_ms": 68700,
+      "T": 114.2155,
+      "eta": 0.1446,
+      "P": 10.3832,
+      "phase": "gas",
+      "E": 98.8726
+    },
+    {
+      "t_ms": 68800,
+      "T": 38.7744,
+      "eta": 1.4019,
+      "P": 8.9479,
+      "phase": "liquid",
+      "E": 99.986
+    },
+    {
+      "t_ms": 68900,
+      "T": 37.8289,
+      "eta": 1.4035,
+      "P": 8.7298,
+      "phase": "liquid",
+      "E": 99.986
+    },
+    {
+      "t_ms": 69000,
+      "T": 30.7418,
+      "eta": 1.2701,
+      "P": 4.7295,
+      "phase": "liquid",
+      "E": 99.986
+    },
+    {
+      "t_ms": 69100,
+      "T": 6.5002,
+      "eta": 1.2716,
+      "P": 1.0,
+      "phase": "liquid",
+      "E": 99.986
+    },
+    {
+      "t_ms": 69200,
+      "T": 0.0,
+      "eta": 1.2716,
+      "P": 0.0,
+      "phase": "liquid",
+      "E": 99.986
+    },
+    {
+      "t_ms": 69300,
+      "T": 22.9767,
+      "eta": 1.2093,
+      "P": 2.484,
+      "phase": "liquid",
+      "E": 99.986
+    },
+    {
+      "t_ms": 69400,
+      "T": 56.3233,
+      "eta": 1.1897,
+      "P": 8.8932,
+      "phase": "liquid",
+      "E": 100.7628
+    },
+    {
+      "t_ms": 69500,
+      "T": 123.8396,
+      "eta": 1.9902,
+      "P": 12.1411,
+      "phase": "gas",
+      "E": 110.3153
+    },
+    {
+      "t_ms": 69600,
+      "T": 62.5489,
+      "eta": 2.1056,
+      "P": 6.1322,
+      "phase": "gas",
+      "E": 117.7866
+    },
+    {
+      "t_ms": 69700,
+      "T": 66.8872,
+      "eta": 2.1056,
+      "P": 6.5576,
+      "phase": "gas",
+      "E": 122.7677
+    },
+    {
+      "t_ms": 69800,
+      "T": 74.2155,
+      "eta": 3.3577,
+      "P": 14.5521,
+      "phase": "gas",
+      "E": 129.3614
+    },
+    {
+      "t_ms": 69900,
+      "T": 116.5939,
+      "eta": 2.4111,
+      "P": 23.7947,
+      "phase": "gas",
+      "E": 137.7101
+    },
+    {
+      "t_ms": 70000,
+      "T": 141.5939,
+      "eta": 0.7166,
+      "P": 15.3906,
+      "phase": "gas",
+      "E": 147.8461
+    },
+    {
+      "t_ms": 70100,
+      "T": 94.3959,
+      "eta": 0.9572,
+      "P": 10.7268,
+      "phase": "gas",
+      "E": 161.2763
+    },
+    {
+      "t_ms": 70200,
+      "T": 69.2216,
+      "eta": 1.1753,
+      "P": 8.2407,
+      "phase": "gas",
+      "E": 168.9307
+    },
+    {
+      "t_ms": 70300,
+      "T": 94.3959,
+      "eta": 1.1507,
+      "P": 20.0842,
+      "phase": "gas",
+      "E": 184.3938
+    },
+    {
+      "t_ms": 70400,
+      "T": 160.4737,
+      "eta": 0.8721,
+      "P": 30.729,
+      "phase": "gas",
+      "E": 198.3108
+    },
+    {
+      "t_ms": 70500,
+      "T": 131.3233,
+      "eta": 6.6738,
+      "P": 17.7464,
+      "phase": "crystal",
+      "E": 1.5715
+    },
+    {
+      "t_ms": 70600,
+      "T": 0.0,
+      "eta": 6.6738,
+      "P": 0.0,
+      "phase": "frozen_solid",
+      "E": 4.1907
+    },
+    {
+      "t_ms": 70700,
+      "T": 0.0,
+      "eta": 6.6738,
+      "P": 0.0,
+      "phase": "frozen_solid",
+      "E": 4.1907
+    },
+    {
+      "t_ms": 70800,
+      "T": 0.0,
+      "eta": 6.6738,
+      "P": 0.0,
+      "phase": "frozen_solid",
+      "E": 4.1907
+    },
+    {
+      "t_ms": 70900,
+      "T": 0.0,
+      "eta": 0.0,
+      "P": 0.0,
+      "phase": "liquid",
+      "E": 4.1907
+    },
+    {
+      "t_ms": 71000,
+      "T": 0.0,
+      "eta": 0.0,
+      "P": 0.0,
+      "phase": "liquid",
+      "E": 4.1907
+    },
+    {
+      "t_ms": 71100,
+      "T": 0.0,
+      "eta": 0.7699,
+      "P": 0.0,
+      "phase": "liquid",
+      "E": 4.1907
+    },
+    {
+      "t_ms": 71200,
+      "T": 57.6578,
+      "eta": 0.7927,
+      "P": 17.2974,
+      "phase": "liquid",
+      "E": 7.6505
+    },
+    {
+      "t_ms": 71300,
+      "T": 22.5163,
+      "eta": 0.7692,
+      "P": 6.1408,
+      "phase": "liquid",
+      "E": 9.7413
+    },
+    {
+      "t_ms": 71400,
+      "T": 25.2164,
+      "eta": 1.0006,
+      "P": 5.0433,
+      "phase": "liquid",
+      "E": 11.4778
+    },
+    {
+      "t_ms": 71500,
+      "T": 25.0,
+      "eta": 0.9886,
+      "P": 5.7692,
+      "phase": "liquid",
+      "E": 12.7678
+    },
+    {
+      "t_ms": 71600,
+      "T": 30.0,
+      "eta": 3.3388,
+      "P": 10.0,
+      "phase": "liquid",
+      "E": 14.6393
+    },
+    {
+      "t_ms": 71700,
+      "T": 33.7744,
+      "eta": 2.3585,
+      "P": 5.9602,
+      "phase": "liquid",
+      "E": 18.059
+    },
+    {
+      "t_ms": 71800,
+      "T": 0.0,
+      "eta": 2.3585,
+      "P": 0.0,
+      "phase": "liquid",
+      "E": 18.059
+    },
+    {
+      "t_ms": 71900,
+      "T": 0.0,
+      "eta": 2.3585,
+      "P": 0.0,
+      "phase": "liquid",
+      "E": 18.059
+    },
+    {
+      "t_ms": 72000,
+      "T": 0.0,
+      "eta": 0.0,
+      "P": 0.0,
+      "phase": "liquid",
+      "E": 18.059
+    },
+    {
+      "t_ms": 72100,
+      "T": 0.0,
+      "eta": 0.0,
+      "P": 0.0,
+      "phase": "liquid",
+      "E": 18.059
+    },
+    {
+      "t_ms": 72200,
+      "T": 0.0,
+      "eta": 0.0,
+      "P": 0.0,
+      "phase": "liquid",
+      "E": 18.059
+    },
+    {
+      "t_ms": 72300,
+      "T": 69.6578,
+      "eta": 0.8973,
+      "P": 17.4145,
+      "phase": "gas",
+      "E": 23.9466
+    },
+    {
+      "t_ms": 72400,
+      "T": 33.7744,
+      "eta": 0.9931,
+      "P": 8.4436,
+      "phase": "liquid",
+      "E": 29.1369
+    },
+    {
+      "t_ms": 72500,
+      "T": 41.25,
+      "eta": 0.932,
+      "P": 7.1739,
+      "phase": "liquid",
+      "E": 32.6047
+    },
+    {
+      "t_ms": 72600,
+      "T": 26.416,
+      "eta": 0.8743,
+      "P": 4.8029,
+      "phase": "liquid",
+      "E": 36.0228
+    },
+    {
+      "t_ms": 72700,
+      "T": 38.4386,
+      "eta": 0.94,
+      "P": 7.6877,
+      "phase": "liquid",
+      "E": 40.1259
+    },
+    {
+      "t_ms": 72800,
+      "T": 37.8246,
+      "eta": 2.5091,
+      "P": 8.7288,
+      "phase": "liquid",
+      "E": 43.3945
+    },
+    {
+      "t_ms": 72900,
+      "T": 0.0,
+      "eta": 2.5091,
+      "P": 0.0,
+      "phase": "liquid",
+      "E": 44.021
+    },
+    {
+      "t_ms": 73000,
+      "T": 0.0,
+      "eta": 2.5091,
+      "P": 0.0,
+      "phase": "liquid",
+      "E": 44.021
+    },
+    {
+      "t_ms": 73100,
+      "T": 0.0,
+      "eta": 2.5091,
+      "P": 0.0,
+      "phase": "liquid",
+      "E": 44.021
+    },
+    {
+      "t_ms": 73200,
+      "T": 0.0,
+      "eta": 0.0,
+      "P": 0.0,
+      "phase": "liquid",
+      "E": 44.021
+    },
+    {
+      "t_ms": 73300,
+      "T": 0.0,
+      "eta": 0.0,
+      "P": 0.0,
+      "phase": "liquid",
+      "E": 44.021
+    },
+    {
+      "t_ms": 73400,
+      "T": 60.0,
+      "eta": 1.5619,
+      "P": 13.6364,
+      "phase": "liquid",
+      "E": 47.7005
+    },
+    {
+      "t_ms": 73500,
+      "T": 33.7744,
+      "eta": 1.5611,
+      "P": 7.1104,
+      "phase": "liquid",
+      "E": 54.1837
+    },
+    {
+      "t_ms": 73600,
+      "T": 37.8246,
+      "eta": 1.6438,
+      "P": 8.2227,
+      "phase": "liquid",
+      "E": 57.4256
+    },
+    {
+      "t_ms": 73700,
+      "T": 39.6241,
+      "eta": 1.5555,
+      "P": 7.2044,
+      "phase": "liquid",
+      "E": 61.2243
+    },
+    {
+      "t_ms": 73800,
+      "T": 38.3659,
+      "eta": 1.5904,
+      "P": 7.6732,
+      "phase": "liquid",
+      "E": 65.059
+    },
+    {
+      "t_ms": 73900,
+      "T": 33.5389,
+      "eta": 3.618,
+      "P": 7.7397,
+      "phase": "liquid",
+      "E": 1.4517
+    },
+    {
+      "t_ms": 74000,
+      "T": 0.0,
+      "eta": 3.618,
+      "P": 0.0,
+      "phase": "liquid",
+      "E": 2.6076
+    },
+    {
+      "t_ms": 74100,
+      "T": 0.0,
+      "eta": 3.618,
+      "P": 0.0,
+      "phase": "liquid",
+      "E": 2.6076
+    },
+    {
+      "t_ms": 74200,
+      "T": 31.6993,
+      "eta": 3.618,
+      "P": 7.3152,
+      "phase": "liquid",
+      "E": 4.3086
+    },
+    {
+      "t_ms": 74300,
+      "T": 40.0,
+      "eta": 3.9262,
+      "P": 6.4,
+      "phase": "liquid",
+      "E": 3.3685
+    },
+    {
+      "t_ms": 74400,
+      "T": 0.0,
+      "eta": 3.9262,
+      "P": 0.0,
+      "phase": "liquid",
+      "E": 4.3582
+    },
+    {
+      "t_ms": 74500,
+      "T": 0.0,
+      "eta": 3.9262,
+      "P": 0.0,
+      "phase": "liquid",
+      "E": 4.3582
+    },
+    {
+      "t_ms": 74600,
+      "T": 40.0,
+      "eta": 11.5547,
+      "P": 12.8,
+      "phase": "crystal",
+      "E": 0.0
+    },
+    {
+      "t_ms": 74700,
+      "T": 16.2256,
+      "eta": 7.6285,
+      "P": 2.5961,
+      "phase": "frozen_solid",
+      "E": 1.6324
+    },
+    {
+      "t_ms": 74800,
+      "T": 0.0,
+      "eta": 7.6285,
+      "P": 0.0,
+      "phase": "frozen_solid",
+      "E": 1.6324
+    },
+    {
+      "t_ms": 74900,
+      "T": 0.0,
+      "eta": 7.6285,
+      "P": 0.0,
+      "phase": "frozen_solid",
+      "E": 1.6324
+    },
+    {
+      "t_ms": 75000,
+      "T": 0.0,
+      "eta": 7.6285,
+      "P": 0.0,
+      "phase": "frozen_solid",
+      "E": 1.6324
+    },
+    {
+      "t_ms": 75100,
+      "T": 0.0,
+      "eta": 7.6285,
+      "P": 0.0,
+      "phase": "frozen_solid",
+      "E": 1.6324
+    },
+    {
+      "t_ms": 75200,
+      "T": 0.0,
+      "eta": 7.6285,
+      "P": 0.0,
+      "phase": "frozen_solid",
+      "E": 1.6324
+    },
+    {
+      "t_ms": 75300,
+      "T": 0.0,
+      "eta": 7.6285,
+      "P": 0.0,
+      "phase": "frozen_solid",
+      "E": 1.6324
+    },
+    {
+      "t_ms": 75400,
+      "T": 0.0,
+      "eta": 0.0,
+      "P": 0.0,
+      "phase": "liquid",
+      "E": 1.6324
+    }
+  ]
+}
